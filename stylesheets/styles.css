@@ -12,11 +12,16 @@
 }
 
 .test{
-    font-family: rocket;
+    font-family: rocket, sans-serif;
     color: white;
 }
 
 .icon{
     max-height: 100%;
     max-width: 100%;
+}
+
+h1{
+    font-family: rocket, sans-serif;
+    mso-bidi-font-weight: lighter;
 }
