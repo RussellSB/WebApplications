@@ -1,27 +1,33 @@
 .navbar{
-    background: linear-gradient(rgba(30,0,0,0.9), rgba(75,10,10,0.9));
+    background: linear-gradient(rgba(30, 0, 0, 0.9), rgba(120, 20, 20, 0.9));
     padding: 8px 8px 8px 8px;
-    margin: -10px -10px -10px -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 0;
     height: 50px;
+    width: 100%;
 }
 
 @font-face {
-    font-family: 'rocket';
-    src: url("../fonts/Rocket Rinder.otf");
-
+    font-family: 'velocipede';
+    src: url("../fonts/0Velocipede-Regular.ttf");
 }
 
-.test{
-    font-family: rocket, sans-serif;
+.index{
+    font-family: velocipede;
     color: white;
+    text-decoration: none;
+    vertical-align: 100%;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 10px #000;
 }
 
 .icon{
-    max-height: 100%;
-    max-width: 100%;
-}
-
-h1{
-    font-family: rocket, sans-serif;
-    mso-bidi-font-weight: lighter;
+    max-height: 175%;
+    max-width: 175%;
+    padding: 0;
+    margin: -6px -6px -6px -6px;
 }
