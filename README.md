@@ -1,3 +1,2 @@
 # WebApplications
-
-I am testing collaborating on this weeeeeee
+An applications for the web
