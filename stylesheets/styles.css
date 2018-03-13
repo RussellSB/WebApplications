@@ -1,9 +1,8 @@
-/*@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Timmana');
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
-@import url('https://fonts.googleapis.com/css?family=Rokkitt');*/
+/* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
-@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,800');
+
+/* CSS limitations */
 
 @media all and (max-width:1166px){
     header{
@@ -11,104 +10,15 @@
     }
 }
 
+/* Overrides */
+
 body{
-    background: linear-gradient(rgba(40,10,10,1),rgba(10,5,5,1)) no-repeat center center fixed;
+    background: linear-gradient(rgba(60,10,10,1),rgba(40,20,0,1)) no-repeat center center fixed;
     min-width: 1166px;
 }
 
 a{
     outline: 0;
-}
-
-#activemenu{
-    color: rgba(255,200,20,1);
-}
-
-#navbar{
-    background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.9));
-    padding: 8px 8px 8px 8px;
-    margin-left: -10px;
-    margin-top: -10px;
-    margin-bottom: 0;
-    height: 50px;
-    width: 100%;
-    box-shadow: 5px 5px 10px rgba(40,10,10,1);
-}
-
-.navtext{
-    font-family: Raleway, sans-serif;
-    color: white;
-    text-decoration: none;
-    vertical-align: middle;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-shadow: 3px 3px 10px rgba(50,20,10,1);
-    display: inline-block;
-    transition: 400ms;
-}
-
-.navtext:hover{
-    letter-spacing: 1px;
-}
-
-.synewave{
-    margin-top: 10px;
-    font-size: 45px;
-}
-
-.synewave:hover{
-    color: rgba(240,100,0,1);
-}
-
-.menus{
-    margin-top: 20px;
-    font-size: 26px;
-}
-
-.menus:hover{
-    color: rgba(200,50,50,1);
-}
-
-.search{
-    font-family: Work Sans, sans-serif;
-    font-weight: 500;
-    background: rgba(100,10,10,1);
-    color: white;
-    border: 0;
-    box-shadow: 0 0 5px 0.5px black;
-    font-size: 20px;
-    align-self: right;
-    width: 400px;
-    text-align: right;
-    float: right;
-    margin-top: 25px;
-}
-
-div#iconbox{
-    vertical-align: top;
-    height: 75px;
-    display: inline-block;
-}
-
-#icon{
-    max-height: 120%;
-    padding: 0;
-    margin: -6px -6px -6px -6px;
-}
-
-#pagetext{
-    font-family: Work Sans, sans-serif;
-    color: white;
-    font-weight: 200;
-}
-
-.pagetitle{
-    margin-top: 100px;
-    margin-bottom: 10px;
-    font-size: 80px;
-    text-align: center;
-    font-family: Raleway, sans-serif;
 }
 
 h1 {
@@ -130,11 +40,116 @@ h2 {
     color: white;
 }
 
+img{
+    height: 250px;
+    float: right;
+}
+
+/* IDs */
+
+#activemenu{
+    color: rgba(255,200,20,1);
+}
+
+#navbar{
+    background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.9));
+    padding: 8px 8px 8px 8px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    height: 50px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(40,10,10,1);
+}
+
+#pagetext{
+    font-family: Work Sans, sans-serif;
+    color: white;
+    font-weight: 200;
+}
+
+#syneicon{
+    max-height: 120%;
+    padding: 0;
+    margin: -6px -6px -6px -6px;
+}
+
+div#iconbox{
+    vertical-align: top;
+    height: 75px;
+    display: inline-block;
+}
+
+/* Classes */
+
+.navtext{
+
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 10px rgba(50,20,10,1);
+    display: inline-block;
+    transition: 400ms;
+}
+
+.navtext:hover{
+    letter-spacing: 1px;
+}
+
+.synewave{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 45px;
+}
+
+.synewave:hover{
+    color: rgba(240,100,0,1);
+}
+
+.menus{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.menus:hover{
+    color: rgba(200,50,50,1);
+}
+
+.search{
+    font-family: Work Sans, sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(100,10,0,1), rgba(0,0,0,1));
+    color: white;
+    border: 0;
+    box-shadow: 0 0 5px 0.5px black;
+    font-size: 20px;
+    align-self: right;
+    width: 400px;
+    text-align: right;
+    float: right;
+    margin-top: 25px;
+}
+
+.pagetitle{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 80px;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+}
+
 .name{
     font-family: Raleway, sans-serif;
 }
 
 .selfpic{
+    box-shadow: 0 0 20px 3px black;
     margin-left: 80px;
 }
 
@@ -145,7 +160,4 @@ h2 {
     padding: 15px;
 }
 
-img{
-    height: 250px;
-    float: right;
-}
+
