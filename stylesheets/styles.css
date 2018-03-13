@@ -1,6 +1,6 @@
 /* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
-@import url('https://fonts.googleapis.com/css?family=Raleway:500,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,800');
 
 /* CSS limitations */
 
@@ -13,7 +13,7 @@
 /* Overrides */
 
 body{
-    background: linear-gradient(rgba(60,10,10,1),rgba(40,20,0,1)) no-repeat center center fixed;
+    background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
     min-width: 1166px;
 }
 
@@ -78,6 +78,29 @@ div#iconbox{
     vertical-align: top;
     height: 75px;
     display: inline-block;
+    float: left;
+}
+
+div#leftside{
+    float: left;
+}
+
+div#rightside{
+    float: right;
+}
+
+button#search{
+    background: url("../images/search button.png") no-repeat center center;
+    background-size: 100% 100%;
+    vertical-align: bottom;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    transition: 200ms
+}
+
+button#search:active{
+    border: 3px solid rgba(0,0,0,0);
 }
 
 /* Classes */
@@ -121,19 +144,20 @@ div#iconbox{
     color: rgba(200,50,50,1);
 }
 
-.search{
+.searchbox{
     font-family: Work Sans, sans-serif;
-    font-weight: 500;
-    background: linear-gradient(90deg, rgba(100,10,0,1), rgba(0,0,0,1));
+    font-weight: 200;
+    background: linear-gradient(rgba(255,20,0,0.6), rgba(255,130,0,0.6));
     color: white;
-    border: 0;
+    border: 1px solid black;
     box-shadow: 0 0 5px 0.5px black;
     font-size: 20px;
     align-self: right;
     width: 400px;
+    height: 30px;
     text-align: right;
-    float: right;
-    margin-top: 25px;
+    vertical-align: bottom;
+    margin-top: 15px;
 }
 
 .pagetitle{
