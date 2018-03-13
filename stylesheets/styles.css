@@ -3,8 +3,15 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
 @import url('https://fonts.googleapis.com/css?family=Rokkitt');
 
+@media all and (max-width:1166px){
+    header{
+        position: relative;
+    }
+}
+
 body{
     background: linear-gradient(rgba(40,10,10,1),rgba(10,5,5,1)) no-repeat center center fixed;
+    min-width: 1166px;
 }
 
 a{
@@ -60,7 +67,7 @@ a{
 }
 
 .search{
-    font-family: Patua One, sans-serif;
+    font-family: Rokkitt, sans-serif;
     background: rgba(100,10,10,1);
     color: white;
     border: 0;
@@ -91,6 +98,7 @@ div#iconbox{
 }
 
 .pagetitle{
+    margin-top: 100px;
     font-size: 40px;
     text-align: center;
     font-family: Patua One, sans-serif;
@@ -103,6 +111,13 @@ h1 {
     padding-bottom: 5px;
 }
 
+header{
+    position: fixed;
+    width: 99%;
+    top: 10px;
+    min-width: 1166px;
+}
+
 h2 {
     width: auto;
     color: white;
@@ -110,6 +125,10 @@ h2 {
 
 .name{
     font-family: Patua One, sans-serif;
+}
+
+.selfpic{
+    margin-left: 80px;
 }
 
 .person {
@@ -123,3 +142,4 @@ img{
     height: 250px;
     float: right;
 }
+
