@@ -43,7 +43,7 @@ a{
 }
 
 .synewave:hover{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .menus{
@@ -53,7 +53,7 @@ a{
 
 .menus:hover{
     color: rgba(200,50,50,1);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 div#iconbox{
