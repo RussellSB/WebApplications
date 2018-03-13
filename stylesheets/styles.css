@@ -1,10 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Timmana');
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
 
 body{
     background: linear-gradient(rgba(40,10,10,1),rgba(10,5,5,1)) no-repeat center center fixed;
 }
 
-.navbar{
+a{
+    outline: 0;
+}
+
+#activemenu{
+    color: rgba(255,200,20,1);
+}
+
+#navbar{
     background: linear-gradient(rgba(30, 0, 0, 0.9), rgba(120, 20, 20, 0.9));
     padding: 8px 8px 8px 8px;
     margin-left: -10px;
@@ -15,28 +25,54 @@ body{
     box-shadow: 5px 5px 10px rgba(40,10,10,1);
 }
 
-.title{
-    font-family: Poppins, sans-serif;
+.navtext{
+    font-family: Timmana, sans-serif;
     color: white;
     text-decoration: none;
     vertical-align: middle;
     margin: 0;
-    font-size: 45px;
     padding-left: 10px;
     padding-right: 10px;
     text-shadow: 3px 3px 10px rgba(50,20,10,1);
     display: inline-block;
 }
 
-.iconbox{
+.synewave{
+    font-size: 45px;
+    transition: 400ms;
+}
+
+.synewave:hover{
+    letter-spacing: 1px;
+}
+
+.menus{
+    font-size: 26px;
+    transition: 400ms;
+}
+
+.menus:hover{
+    color: rgba(200,50,50,1);
+    letter-spacing: 1px;
+}
+
+div#iconbox{
     vertical-align: top;
     height: 75px;
     display: inline-block;
 }
 
 .icon{
-    max-height: 175%;
-    max-width: 175%;
+    max-height: 120%;
     padding: 0;
     margin: -6px -6px -6px -6px;
+}
+
+#pagetext{
+    font-family: Patua One, sans-serif;
+    color: white;
+}
+
+.pagetitle{
+    font-size: 40px;
 }
