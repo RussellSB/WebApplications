@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body{
+    background: linear-gradient(rgba(40,10,10,1),rgba(10,5,5,1)) no-repeat center center fixed;
+}
+
 .navbar{
     background: linear-gradient(rgba(30, 0, 0, 0.9), rgba(120, 20, 20, 0.9));
     padding: 8px 8px 8px 8px;
@@ -6,23 +12,26 @@
     margin-bottom: 0;
     height: 50px;
     width: 100%;
+    box-shadow: 5px 5px 10px rgba(40,10,10,1);
 }
 
-@font-face {
-    font-family: 'velocipede';
-    src: url("../fonts/0Velocipede-Regular.ttf");
-}
-
-.index{
-    font-family: velocipede;
+.title{
+    font-family: Poppins, sans-serif;
     color: white;
     text-decoration: none;
-    vertical-align: 100%;
+    vertical-align: middle;
     margin: 0;
-    font-size: 25px;
+    font-size: 45px;
     padding-left: 10px;
     padding-right: 10px;
-    text-shadow: 3px 3px 10px #000;
+    text-shadow: 3px 3px 10px rgba(50,20,10,1);
+    display: inline-block;
+}
+
+.iconbox{
+    vertical-align: top;
+    height: 75px;
+    display: inline-block;
 }
 
 .icon{
