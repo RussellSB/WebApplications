@@ -1,6 +1,6 @@
 /* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
-@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,800');
 
 /* CSS limitations */
 
@@ -83,7 +83,7 @@ div#iconbox{
 /* Classes */
 
 .navtext{
-    font-family: Raleway, sans-serif;
+
     color: white;
     text-decoration: none;
     vertical-align: middle;
@@ -100,6 +100,8 @@ div#iconbox{
 }
 
 .synewave{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
     margin-top: 10px;
     font-size: 45px;
 }
@@ -109,6 +111,8 @@ div#iconbox{
 }
 
 .menus{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
     margin-top: 20px;
     font-size: 26px;
 }
@@ -120,7 +124,7 @@ div#iconbox{
 .search{
     font-family: Work Sans, sans-serif;
     font-weight: 500;
-    background: rgba(100,10,10,1);
+    background: linear-gradient(90deg, rgba(100,10,0,1), rgba(0,0,0,1));
     color: white;
     border: 0;
     box-shadow: 0 0 5px 0.5px black;
@@ -155,6 +159,5 @@ div#iconbox{
     margin-right: auto;
     padding: 15px;
 }
-
 
 
