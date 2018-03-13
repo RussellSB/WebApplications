@@ -1,9 +1,8 @@
-/*@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Timmana');
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
-@import url('https://fonts.googleapis.com/css?family=Rokkitt');*/
+/* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
 @import url('https://fonts.googleapis.com/css?family=Raleway:800');
+
+/* CSS limitations */
 
 @media all and (max-width:1166px){
     header{
@@ -11,14 +10,42 @@
     }
 }
 
+/* Overrides */
+
 body{
-    background: linear-gradient(rgba(40,10,10,1),rgba(10,5,5,1)) no-repeat center center fixed;
+    background: linear-gradient(rgba(60,10,10,1),rgba(40,20,0,1)) no-repeat center center fixed;
     min-width: 1166px;
 }
 
 a{
     outline: 0;
 }
+
+h1 {
+    width: auto;
+    color: white;
+    font-size: 48px;
+    padding-bottom: 5px;
+}
+
+header{
+    position: fixed;
+    width: 99%;
+    top: 10px;
+    min-width: 1166px;
+}
+
+h2 {
+    width: auto;
+    color: white;
+}
+
+img{
+    height: 250px;
+    float: right;
+}
+
+/* IDs */
 
 #activemenu{
     color: rgba(255,200,20,1);
@@ -34,6 +61,26 @@ a{
     width: 100%;
     box-shadow: 5px 5px 10px rgba(40,10,10,1);
 }
+
+#pagetext{
+    font-family: Work Sans, sans-serif;
+    color: white;
+    font-weight: 200;
+}
+
+#syneicon{
+    max-height: 120%;
+    padding: 0;
+    margin: -6px -6px -6px -6px;
+}
+
+div#iconbox{
+    vertical-align: top;
+    height: 75px;
+    display: inline-block;
+}
+
+/* Classes */
 
 .navtext{
     font-family: Raleway, sans-serif;
@@ -85,24 +132,6 @@ a{
     margin-top: 25px;
 }
 
-div#iconbox{
-    vertical-align: top;
-    height: 75px;
-    display: inline-block;
-}
-
-#icon{
-    max-height: 120%;
-    padding: 0;
-    margin: -6px -6px -6px -6px;
-}
-
-#pagetext{
-    font-family: Work Sans, sans-serif;
-    color: white;
-    font-weight: 200;
-}
-
 .pagetitle{
     margin-top: 100px;
     margin-bottom: 10px;
@@ -111,30 +140,12 @@ div#iconbox{
     font-family: Raleway, sans-serif;
 }
 
-h1 {
-    width: auto;
-    color: white;
-    font-size: 48px;
-    padding-bottom: 5px;
-}
-
-header{
-    position: fixed;
-    width: 99%;
-    top: 10px;
-    min-width: 1166px;
-}
-
-h2 {
-    width: auto;
-    color: white;
-}
-
 .name{
     font-family: Raleway, sans-serif;
 }
 
 .selfpic{
+    box-shadow: 0 0 20px 3px black;
     margin-left: 80px;
 }
 
@@ -145,8 +156,5 @@ h2 {
     padding: 15px;
 }
 
-img{
-    height: 250px;
-    float: right;
-}
+
 
