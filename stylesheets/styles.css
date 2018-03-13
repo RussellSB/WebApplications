@@ -35,25 +35,41 @@ a{
     padding-right: 10px;
     text-shadow: 3px 3px 10px rgba(50,20,10,1);
     display: inline-block;
+    transition: 400ms;
+}
+
+.navtext:hover{
+    letter-spacing: 1px;
 }
 
 .synewave{
     font-size: 45px;
-    transition: 400ms;
 }
 
 .synewave:hover{
-    letter-spacing: 1px;
+    color: rgba(240,100,0,1);
 }
 
 .menus{
     font-size: 26px;
-    transition: 400ms;
 }
 
 .menus:hover{
     color: rgba(200,50,50,1);
-    letter-spacing: 1px;
+}
+
+.search{
+    font-family: Patua One, sans-serif;
+    background: rgba(100,10,10,1);
+    color: white;
+    border: 0;
+    box-shadow: 0 0 5px 0.5px black;
+    font-size: 20px;
+    align-self: right;
+    width: 400px;
+    text-align: right;
+    float: right;
+    margin-top: 15px;
 }
 
 div#iconbox{
@@ -62,7 +78,7 @@ div#iconbox{
     display: inline-block;
 }
 
-.icon{
+#icon{
     max-height: 120%;
     padding: 0;
     margin: -6px -6px -6px -6px;
