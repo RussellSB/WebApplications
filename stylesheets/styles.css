@@ -3,26 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,800');
 @import url('../bootstrap/css/bootstrap.min.css');
 
-
-/* CSS limitations */
-
-@media all and (max-width:1166px){
-    header{
-        position: relative;
-    }
-}
-
-
 /* Overrides */
 
 body{
     background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
-    min-width: 1166px;
     margin: 0;
-}
-
-div{
-    indent: 0;
 }
 
 a{
@@ -72,7 +57,7 @@ img{
 }
 
 #navbar{
-    position: absolute;
+    position: fixed;
     top: 10px;
     z-index: 20;
     background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.95));
@@ -109,13 +94,13 @@ div#leftside{
 
 div#rightside{
     float: right;
-    margin-top: 8px;
+    margin-top: 1px;
     margin-right: -8px;
 }
 
 #searchbox{
     font-family: Work Sans, sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     background: linear-gradient(rgba(255,20,0,0.6), rgba(255,130,0,0.6));
     color: white;
     border: 2px solid rgba(200,100,20,0.8);
@@ -123,7 +108,7 @@ div#rightside{
     font-size: 17px;
     align-self: right;
     width: 200px;
-    height: 29px;
+    height: 35px;
     text-align: right;
     vertical-align: bottom;
     margin-top: 19px;
@@ -262,5 +247,150 @@ button#shopping:active{
     height: 500px;
 }
 
+
+/* @Media for smaller screens */
+@media screen and (max-width: 614px) {
+    .pagetitle{
+        font-size: 45px;
+        margin-top: 20px;
+    }
+
+    .aboutme{
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .selfpic{
+        margin-right: -70px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    div#leftside{
+        align-items: center;
+        text-align: center;
+    }
+
+    div#rightside{
+        margin-top: -5px;
+    }
+
+    #searchbox:focus{
+        height: 35px;
+        width: 240px;
+    }
+
+    button#shopping{
+        margin-right: 20px;
+    }
+
+    .synewave{
+        margin-top: -1px;
+        font-size: 35px;
+        display: inline;
+    }
+
+    .synewave:after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    #iconbox #syneicon{
+        display: none;
+    }
+
+    .menus{
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    #navbar{
+        position: relative;
+        height: 145px;
+    }
+
+    .carousel{
+        margin-top: 10px;
+        height: 250px;
+    }
+
+    .carousel .item{
+        height: 250px;
+    }
+
+    .carousel-inner > .item > img{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 614px){
+    h1{
+        font-size: 30px;
+    }
+
+    div#leftside{
+        align-items: center;
+        text-align: center;
+    }
+
+    div#rightside{
+        margin-top: 30px;
+    }
+
+    #searchbox:focus{
+        height: 35px;
+        width: 240px;
+    }
+
+    button#shopping{
+        margin-right: 20px;
+    }
+
+    .synewave{
+        margin-top: -1px;
+        font-size: 35px;
+        display: inline;
+    }
+
+    .synewave:after{
+        content: "\a";
+        white-space: pre;
+    }
+
+    #iconbox #syneicon{
+        display: none;
+    }
+
+    .menus{
+        margin-top: 0;
+        font-size: 17px;
+    }
+
+    #navbar{
+        position: relative;
+        height: 100px;
+    }
+
+    .carousel{
+        margin-top: 13px;
+        height: 250px;
+    }
+
+    .carousel .item{
+        height: 250px;
+    }
+
+    .carousel-inner > .item > img{
+        height: 250px;
+    }
+}
 
 
