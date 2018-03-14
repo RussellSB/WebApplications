@@ -10,6 +10,7 @@
     <title>SyneWave</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
     <link rel="stylesheet" href="../stylesheets/styles.css" />
+    <script src="../javascript/script.js"></script>
 </head>
 
 <body>
@@ -25,8 +26,8 @@
             <a href="#" class="navtext menus">Contact Us</a>
         </div>
         <div id="rightside">
-            <input class="searchbox" type="text" placeholder="">
-            <button id="search"></button>
+            <input id="searchbox" type="text" placeholder="Search for Products" onkeypress="handle(event)">
+            <button id="search" onClick="search_func()"></button>
             <button id="shopping"></button>
         </div>
     </nav>
@@ -37,7 +38,7 @@
         <div class="person">
 
             <h2 class="name">Russell Sammut-Bonnici</h2>
-            <img class="selfpic" src="../images/RussellSB.png" alt="Portrait of Ganon" />
+            <img class="selfpic" src="../images/RussellSB.png" alt="Portrait of Russell" />
 
             <p>
                 Russell Sammut-Bonnici also known as "Russell Esby" had the idea for making the site on musical instruments.
@@ -45,14 +46,15 @@
                 a lot with his colleague Dr.Jenkins, the pushes did not want to co-operate and temporarily broke the website which
                 made him a little sad. When he is not at University, focusing aggressively, he can be found hosting a TV Show called
                 "Instrument's Got Talent". In this show instruments are tested for talent and with the right sound they are hired with
-                much respect and money into the humble inventory of SyneWave Music Store. Ukuleles are hired automatically.
+                much respect and money into the humble inventory of SyneWave
+                Store. Ukuleles are hired automatically.
             </p>
         </div>
 
         <div class="person">
 
             <h2 class="name">Andre Jenkins</h2>
-            <img class="selfpic" src="../images/AndreJ.png" alt="Portrait of Ganon" />
+            <img class="selfpic" src="../images/AndreJ.png" alt="Portrait of Andre" />
 
             <p>
                 Andre Jenkins worked on the front end of this website. He managed to animate and perfect the header toolbar
@@ -68,7 +70,7 @@
         <div class="person">
 
             <h2 class="name">Sean Powell</h2>
-            <img class="selfpic" src="../images/SeanP.png" alt="Portrait of Ganon" />
+            <img class="selfpic" src="../images/SeanP.png" alt="Portrait of Sean" />
 
             <p>
                 Sean Powell worked on the back end of this website. With supreme dedication to the martial arts of PHP he
