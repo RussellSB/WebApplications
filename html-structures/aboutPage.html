@@ -6,6 +6,7 @@
     <title>About Us</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
     <link rel="stylesheet" href="../stylesheets/styles.css" />
+    <script src="../javascript/script.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
             <a href="#" class="navtext menus">Contact Us</a>
         </div>
         <div id="rightside">
-            <input class="searchbox" type="text" placeholder="Search for Product">
-            <button id="search"></button>
+            <input id="searchbox" type="text" placeholder="Search for Products" onkeypress="handle(event)">
+            <button id="search" onClick="search_func()"></button>
             <button id="shopping"></button>
         </div>
     </nav>
