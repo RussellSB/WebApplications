@@ -9,6 +9,11 @@ function handle(e){
 //Searches for the product inputted from the searchbox
 function search_func(){
     address=document.getElementById("searchbox").value;
-    //write your specific code from here
-    alert("You are searching: " + address);
+    if(address==""){
+        alert("Nothing inputted");
+    }else{
+        //write your specific code from here
+        alert("You are searching: " + address);
+    }
+
 }
