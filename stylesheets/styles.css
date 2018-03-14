@@ -156,7 +156,7 @@ button#shopping:active{
 
 .menus{
     font-family: Raleway, sans-serif;
-    font-weight: 500;
+    font-weight: 200;
     margin-top: 20px;
     font-size: 26px;
 }
@@ -172,9 +172,9 @@ button#shopping:active{
     color: white;
     border: 2px solid rgba(200,100,20,0.8);
     box-shadow: 0 0 5px 0.5px black;
-    font-size: 20px;
+    font-size: 18px;
     align-self: right;
-    width: 100px;
+    width: 200px;
     height: 29px;
     text-align: right;
     vertical-align: bottom;
