@@ -1,6 +1,7 @@
 /* Imported fonts */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,800');
+@import url('../bootstrap/css/bootstrap.min.css');
 
 
 /* CSS limitations */
@@ -17,17 +18,33 @@
 body{
     background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
     min-width: 1166px;
+    margin: 0;
+}
+
+div{
+    indent: 0;
 }
 
 a{
     outline: 0;
+    text-decoration: none !important;
 }
 
 h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
     width: auto;
     color: white;
     font-size: 48px;
-    padding-bottom: 5px;
+    margin-bottom: 0;
+    text-shadow: 0 0 20px #000;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 15px;
 }
 
 header{
@@ -55,13 +72,15 @@ img{
 }
 
 #navbar{
+    position: absolute;
+    top: 10px;
+    z-index: 20;
     background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.95));
     padding: 8px 8px 8px 8px;
-    margin-left: -10px;
     margin-top: -10px;
     margin-bottom: 0;
-    height: 50px;
-    width: 100%;
+    height: 65px;
+    min-width: 100%;
     box-shadow: 5px 5px 10px rgba(40,10,10,1);
 }
 
@@ -90,6 +109,8 @@ div#leftside{
 
 div#rightside{
     float: right;
+    margin-top: 8px;
+    margin-right: -8px;
 }
 
 #searchbox{
@@ -128,6 +149,7 @@ button#search:active{
     height: 25px;
     width: 25px;
     border: 2px solid rgba(255,130,20,1);
+    margin: 5px 5px 5px 5px;
 }
 
 button#shopping{
@@ -137,6 +159,7 @@ button#shopping{
     width: 35px;
     height: 35px;
     border: 2px solid rgba(200,100,20,0.8);
+    margin-right: 12px;
     transition: 50ms;
 }
 
@@ -144,6 +167,7 @@ button#shopping:active{
     width: 25px;
     height: 25px;
     border: 2px solid rgba(255,130,20,1);
+    margin: 5px 15px 5px 5px;
 }
 
 
@@ -210,5 +234,33 @@ button#shopping:active{
     margin-right: auto;
     padding: 15px;
 }
+
+
+/* Carousel */
+.carousel {
+    margin-top: 65px;
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
 
 
