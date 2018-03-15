@@ -15,7 +15,8 @@ $headers = 'From: synewavecomplaints@gmail.com' . "\r\n" .
 $fullText = $_POST['fullName'] . "\r\n" . $_POST['mainText'] . "\r\n";
 mail($to, $_POST['subject'], $fullText, $headers);
 
-echo "Email Sent";
+header("Location: http://127.0.0.1/WebApplications/html-structures/frontPage.html"); /*redirects to main page*/
+exit();
 ?>
 </body>
 </html>
