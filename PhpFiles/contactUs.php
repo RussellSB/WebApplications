@@ -9,15 +9,14 @@
  */
 
 $to = "synewave1@gmail.com";
-$headers = 'From: synewave1@gmail.com' . "\r\n" .
-    'Reply-To: synewave1@gmail.com' . "\r\n" .
+$headers = 'From: synewavecomplaints@gmail.com' . "\r\n" .
+    'Reply-To: ' . $_POST['email'] . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-$fullText = $_POST['fullName'] . "\r\n" . $_POST['mainText'] . "\r\n" . $_POST['email'];
+$fullText = $_POST['fullName'] . "\r\n" . $_POST['mainText'] . "\r\n";
 mail($to, $_POST['subject'], $fullText, $headers);
 
 echo "Email Sent";
 ?>
 </body>
-
 </html>
 
