@@ -15,8 +15,8 @@
 <body>
     <header id="navbar">
         <nav>
-            <div id="iconbox">
-                <img src="../images/synewave_icon_tidied.gif" id="syneicon">
+            <div id="iconbox" class="hovering">
+                <img src="../images/synewave_icon_blended.gif" id="syneicon">
             </div>
             <div id="leftside">
                  <p class="navtext synewave" id="activemenu">SyneWave</p>
@@ -25,12 +25,16 @@
                 <a href="#" class="navtext menus">Contact Us</a>
             </div>
             <div id="rightside">
-                <input id="searchbox" type="text" placeholder="What's up?" onkeypress="handle(event)">
+                <form id="searcher">
+                    <input id="searchbox" type="text" placeholder="What's up?" onkeypress="handle(event)">
+                </form>
                 <button id="search" onClick="search_func()"></button>
                 <button id="shopping"></button>
             </div>
         </nav>
     </header>
+
+    <!-- TODO: Replace searchbar functionality with PHP code -->
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
