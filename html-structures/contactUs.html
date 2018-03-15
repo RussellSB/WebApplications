@@ -1,12 +1,49 @@
 <html>
-<form method="POST" action="http://127.0.0.1/WebApplications/PhpFiles/contactUs.php">
-    <label>
-        Full name:<input type="text" name="fullName"><br><br>
-        Subject:<input type="text" name="subject"><br><br>
-        Main text:<input type="text" name="mainText"><br><br>
-        Email:<input type="email" name="email"><br><br>
-        <br>
-        <input type="submit">
-    </label>
-</form>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SyneWave - Music Store For All Your Favourites">
+    <meta name="author" content="The Syne Bros.">
+    <title>SyneWave</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
+</head>
+
+<body>
+    <header id="navbar">
+        <nav>
+            <div id="iconbox" class="hovering">
+                <a href="frontPage.html"><img src="../images/synewave_icon_blended.gif" id="syneicon"></a>
+            </div>
+            <div id="leftside">
+                <a href="frontPage.html" class="navtext synewave">SyneWave</a>
+                <a href="#" class="navtext menus">Products</a>
+                <a href="aboutPage.html" class="navtext menus">About Us</a>
+                <a href="contactUs.html" class="navtext menus" id="activemenu">Contact Us</a>
+            </div>
+            <div id="rightside">
+                <form id="searcher">
+                    <input id="searchbox" type="text" placeholder="What's up?" onkeypress="handle(event)">
+                </form>
+                <button id="search" onClick="search_func()"></button>
+                <button id="shopping"></button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="contact">
+        <h1 class="pagetitle">Talk to us!</h1>
+        <form method="POST" action="http://127.0.0.1/WebApplications/PhpFiles/contactUs.php">
+            <label>
+                Full name: <input type="text" name="fullName"><br><br>
+                Subject: <input type="text" name="subject"><br><br>
+                Main text: <input type="text" name="mainText"><br><br>
+                Email: <input type="email" name="email"><br><br>
+                <br>
+                <input type="submit">
+            </label>
+        </form>
+    </div>
+</body>
 </html>
