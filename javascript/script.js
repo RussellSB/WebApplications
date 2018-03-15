@@ -8,8 +8,8 @@ function handle(e){
 
 //Searches for the product inputted from the searchbox
 function search_func(){
-    address=document.getElementById("searchbox").value;
-    if(address==""){
+    var address=document.getElementById("searchbox").value;
+    if(address===""){
         alert("Nothing inputted");
     }else{
         //write your specific code from here
