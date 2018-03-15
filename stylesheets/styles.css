@@ -49,7 +49,6 @@ img{
     float: right;
 }
 
-
 /* IDs */
 
 #activemenu{
@@ -76,7 +75,7 @@ img{
 }
 
 #syneicon{
-    max-height: 120%;
+    max-height: 150%;
     padding: 0;
     margin: -6px -6px -6px -6px;
 }
@@ -96,6 +95,10 @@ div#rightside{
     float: right;
     margin-top: 1px;
     margin-right: -8px;
+}
+
+#searcher{
+    display: inline;
 }
 
 #searchbox{
@@ -220,6 +223,10 @@ button#shopping:active{
     padding: 15px;
 }
 
+.hovering{
+    animation: oscillate 5s infinite;
+}
+
 
 /* Carousel */
 .carousel {
@@ -260,6 +267,12 @@ button#shopping:active{
     height: var(--main-height);
 }
 
+
+@keyframes oscillate {
+    0%{ margin-top: 3px; }
+    50%{ margin-top: -3px; }
+    100%{ margin-top: 3px; }
+}
 
 /* @Media for smaller screens */
 @media screen and (max-width: 614px) {
