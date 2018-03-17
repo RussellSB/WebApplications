@@ -139,11 +139,18 @@ div#contact{
 }
 
 #contact > form > label > .userinput{
-    background: linear-gradient(rgba(40,0,0,1), rgba(10,0,0,1));
-    border: 1px solid white;
+    box-shadow: 0 0 20px 3px black;
+    background: rgba(40,0,0,1);
+    border: 2px solid rgba(100,0,0,1);
     color: rgba(200,200,200,1);
     font-weight: 300;
     vertical-align: top;
+    transition: 400ms;
+}
+
+#contact > form > label > .userinput:focus{
+    border: 2px solid gold;
+    background: rgba(60,0,0,1);
 }
 
 button#search{
