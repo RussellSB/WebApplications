@@ -138,6 +138,14 @@ div#contact{
     width: 320px;
 }
 
+#contact > form > label > .userinput{
+    background: linear-gradient(rgba(40,0,0,1), rgba(10,0,0,1));
+    border: 1px solid white;
+    color: rgba(200,200,200,1);
+    font-weight: 300;
+    vertical-align: top;
+}
+
 button#search{
     background: url("../images/search button.png") no-repeat center center;
     background-size: 100% 100%;

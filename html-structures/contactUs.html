@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -38,15 +38,16 @@
         <h1 class="pagetitle">Talk to us!</h1>
         <form method="POST" action="http://127.0.0.1:8080/WebApplications/PhpFiles/contactUs.php">
             <label>
-                Full name: <input type="text" name="fullName"><br><br>
-                Subject: <input type="text" name="subject"><br><br>
-                Main text: <input type="text" name="mainText"><br><br>
-                Email: <input type="email" name="email"><br><br>
+                Full name: <input class="userinput" type="text" name="fullName" style="width: 100%;"><br><br>
+                Subject: <input class="userinput" type="text" name="subject" style="width: 200%"><br><br>
+                Main text: <textarea class="userinput" name="mainText" style="width: 350%; height: 100px"></textarea><br><br>
+                Email: <input class="userinput" type="email" name="email" style="width: 100%"><br><br>
                 <br>
-                <input type="submit">
+                <input type="submit" style="font-weight: 800">
             </label>
         </form>
     </div>
+
     <script src="../javascript/script.js"></script>
 </body>
 </html>
