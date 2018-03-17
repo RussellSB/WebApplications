@@ -13,17 +13,23 @@
 </head>
 
 <body>
+
     <header id="navbar">
         <nav>
+            <!-- The icon at the upperleft of the site. -->
             <div id="iconbox" class="hovering">
                 <a href="frontPage.html"><img src="../images/synewave_icon_blended.gif" id="syneicon"></a>
             </div>
+
+            <!-- The left side of the header. Contains the title, and three menu items. -->
             <div id="leftside">
                 <a href="frontPage.html" class="navtext synewave" id="activemenu">SyneWave</a>
                 <a href="#" class="navtext menus">Products</a>
                 <a href="aboutPage.html" class="navtext menus">About Us</a>
                 <a href="contactUs.html" class="navtext menus">Contact Us</a>
             </div>
+
+            <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
             <div id="rightside">
                 <form id="searcher">
                     <input id="searchbox" type="text" placeholder="What's up?" onkeypress="handle(event)">
@@ -36,6 +42,7 @@
 
     <!-- TODO: Replace searchbar functionality with PHP code -->
 
+    <!-- Using Bootstrap's Carousel code to create a carousel under the navigation bar. -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -93,9 +100,10 @@
 
     <!-- TODO: Add content below the carousel -->
 
+    <!-- Added scripts necessary for site to function normally.
+         Put near the bottom to make the website load more quickly. -->
     <script>window.jQuery || document.write('<script src="../javascript/jquery.min.js"><\/script>')</script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../javascript/holder.min.js"></script>
     <script src="../javascript/script.js"></script>
 </body>
