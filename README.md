@@ -8,11 +8,15 @@ and install XAMPP from [here](https://www.apachefriends.org/download.html).
 
 
 ## Preparing website and server settings.
-- Navigate to your `xampp` folder, and open the `htdocs` folder.
+- Navigate to your `xampp`[windows] or `lampp` [linux] folder, and open the `htdocs` folder.
 - Clone this repository in there.
   - *You should have a `WebApplications` folder inside `htdocs`*
-- Copy the file `WebApplications/settings/php.ini` to `xampp/php`.
-- Copy the file `WebApplications/settings/sendmail.ini` to `xampp/sendmail`.
+- **For Windows**
+  - Copy the file `WebApplications/settings/php.ini` to `xampp/php`.
+  - Copy the file `WebApplications/settings/sendmail.ini` to `xampp/sendmail`.
+- **For Linux**
+  - Copy the file `WebApplications/settings/php.ini` to `lampp/etc`.
+  - Copy the file `WebApplications/settings/sendmail.ini` to `lampp/etc`.
 
 ## Loading the website
 - Run XAMPP.
