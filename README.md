@@ -5,9 +5,6 @@ An example of a website using an Apache server.
 The only thing you need to do before downloading this repo is to download 
 and install XAMPP from [here](https://www.apachefriends.org/download.html).
 
-If you're using this on Linux, you need to install sendmail. On Ubuntu this command is:
-`sudo apt-get install sendmail`
-
 
 
 ## Preparing website and server settings.
@@ -27,6 +24,3 @@ If you're using this on Linux, you need to install sendmail. On Ubuntu this comm
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
 - Go to your browser and load `localhost:8080/WebApplications/html-structures/frontPage.html`.
-
-## Todo
-- Install sendmail on Linux and update the README.md
