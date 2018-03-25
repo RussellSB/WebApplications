@@ -9,7 +9,7 @@ If you are on Unix, you will need SSMTP. Using Ubuntu, run this command: `sudo a
 
 
 ## Preparing Website/Server Settings
-#### Windows
+### Windows
 - Navigate to your `xampp` folder, and open the `htdocs` folder.
 - Clone this repository in there.
   - *You should have a `WebApplications` folder inside `htdocs`*
