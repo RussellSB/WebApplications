@@ -3,7 +3,7 @@ An example of a website using an Apache server.
 
 ## Before we begin...
 The only thing you need to do before downloading this repo is to download 
-and install XAMPP from [here](https://www.apachefriends.org/download.html).
+and install XAMPP from [here](https://www.apachefriends.org/download.html). **Make sure it's the 5.6.34 version**.
 
 If you are on Unix, you will need SSMTP. Using Ubuntu, run this command: `sudo apt-get install ssmtp`
 
@@ -24,7 +24,7 @@ If you are on Unix, you will need SSMTP. Using Ubuntu, run this command: `sudo a
 
 
 ## Loading the website
-- Run XAMPP.
+- Run the XAMPP control panel.
 - Start the Apache server.
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
