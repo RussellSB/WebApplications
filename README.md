@@ -8,7 +8,7 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 
 
 ## Preparing Website/Server Settings
-#### Windows
+### Windows
 - Navigate to your `xampp` folder, and open the `htdocs` folder.
 - Clone this repository in there.
   - *You should have a `WebApplications` folder inside `htdocs`*
@@ -23,7 +23,7 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 
 
 ## Loading the website
-- Run XAMPP.
+- Run the XAMPP control panel.
 - Start the Apache server.
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
