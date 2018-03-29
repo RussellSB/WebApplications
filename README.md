@@ -2,7 +2,7 @@
 An example of a website using an Apache server.
 
 ## Before we begin...
-You're going to need XAMPP for this to work. Install XAMPP from [here](https://www.apachefriends.org/download.html).
+You're going to need XAMPP for this to work. Install XAMPP from [here](https://www.apachefriends.org/download.html). **Make sure it is the 5.6.34 version.**
 
 If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `sudo apt-get install ssmtp`
 
