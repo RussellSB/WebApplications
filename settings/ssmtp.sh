@@ -5,6 +5,7 @@ sudo cp revaliases /etc/ssmtp/revaliases
 echo 'Copying php.ini file...'
 sudo cp phpLin.ini /opt/lampp/etc/php.ini
 echo 'Changing permissions...'
+sudo chmod 777 /etc/ssmtp
 sudo chmod 640 /etc/ssmtp/ssmtp.conf
 sudo chown root:mail /etc/ssmtp/ssmtp.conf
 echo 'Installation complete!'
