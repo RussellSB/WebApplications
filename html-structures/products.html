@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -24,9 +24,9 @@
             <!-- The left side of the header. Contains the title, and three menu items. -->
             <div id="leftside">
                 <a href="frontPage.html" class="navtext synewave">SyneWave</a>
-                <a href="products.html" class="navtext menus">Products</a>
+                <a href="products.html" class="navtext menus" id="activemenu">Products</a>
                 <a href="aboutPage.html" class="navtext menus">About Us</a>
-                <a href="contactUs.html" class="navtext menus" id="activemenu">Contact Us</a>
+                <a href="contactUs.html" class="navtext menus">Contact Us</a>
             </div>
 
             <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
@@ -40,20 +40,9 @@
         </nav>
     </header>
 
-    <div id="contact">
-        <h1 class="pagetitle">Talk to us!</h1>
-        <form method="POST" action="http://127.0.0.1:8080/WebApplications/phpfiles/contactUs.php">
-            <label>
-                Full name: <input class="userinput" type="text" name="fullName" style="width: 100%;"><br><br>
-                Subject: <input class="userinput" type="text" name="subject" style="width: 200%"><br><br>
-                Main text: <textarea class="userinput" name="mainText" style="width: 350%; height: 100px"></textarea><br><br>
-                Email: <input class="userinput" type="email" name="email" style="width: 100%"><br><br>
-                <br>
-                <input type="submit" style="font-weight: 800">
-            </label>
-        </form>
-    </div>
 
-    <script src="../javascript/script.js"></script>
+<script src="../javascript/script.js"></script>
+
 </body>
+
 </html>
