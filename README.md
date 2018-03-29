@@ -1,11 +1,10 @@
-# WebApplications
+# WebApplication Assignment
 An example of a website using an Apache server.
 
 ## Before we begin...
-The only thing you need to do before downloading this repo is to download 
-and install XAMPP from [here](https://www.apachefriends.org/download.html).
+You're going to need XAMPP for this to work. Install XAMPP from [here](https://www.apachefriends.org/download.html).
 
-If you are on Unix, you will need SSMTP. Using Ubuntu, run this command: `sudo apt-get install ssmtp`
+If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `sudo apt-get install ssmtp`
 
 
 ## Preparing Website/Server Settings
@@ -29,5 +28,7 @@ If you are on Unix, you will need SSMTP. Using Ubuntu, run this command: `sudo a
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
 - Go to your browser and load `localhost:8080/WebApplications/html-structures/frontPage.html`.
+
+
 
 
