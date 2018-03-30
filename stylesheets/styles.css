@@ -118,7 +118,8 @@ div#contact{
 
 /*Footer*/
 footer{
-    background: linear-gradient(rgba(70, 20, 20, 0.95),rgba(30, 0, 0, 1) );
+    z-index: 20;
+    background: linear-gradient(rgba(120, 20, 20, 0.95),rgba(30, 0, 0, 1));
     padding: 8px 8px 8px 8px;
     margin-top: -10px;
     margin-bottom: 0;
