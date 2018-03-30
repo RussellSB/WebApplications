@@ -27,7 +27,7 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 - Start the Apache server.
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
-- Go to your browser and load `localhost:8080/WebApplications/html-structures/frontPage.html`.
+- Go to your browser and load `localhost:8080/WebApplications/page-structures/frontPage.php`.
 
 
 
