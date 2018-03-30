@@ -1,4 +1,4 @@
-/* Imported fonts */
+/* Imported fonts and bootstrap*/
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,500');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,800');
 @import url('../bootstrap/css/bootstrap.min.css');
@@ -8,6 +8,10 @@
 body{
     background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
     margin: 0;
+}
+
+.content{
+    position: absolute;
 }
 
 a{
@@ -112,6 +116,69 @@ div#contact{
     width: 50%;
 }
 
+/*Footer*/
+footer{
+    background: linear-gradient(rgba(70, 20, 20, 0.95),rgba(30, 0, 0, 1) );
+    padding: 8px 8px 8px 8px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    height: 200px;
+    box-shadow: 5px 5px 10px rgba(20,10,10,1);
+
+    position: relative;
+
+}
+
+div#subMenus{
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    margin-top: 125px;
+}
+
+div#social{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    margin-top: 60px;
+}
+
+button#facebook{
+    background: url("../images/facebook_butt.png") no-repeat center center;
+    background-size: 100% 100%;
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    transition: 50ms;
+    padding: 0;
+    border: none;
+    margin-left: 25px;
+}
+
+button#facebook:active{
+    height: 40px;
+    width: 40px;
+}
+
+button#twitter{
+    background: url("../images/twitter_butt.png") no-repeat center center;
+    background-size: 100% 100%;
+    vertical-align: bottom;
+    width: 50px;
+    height: 50px;
+    transition: 50ms;
+    padding: 0;
+    border: none;
+}
+
+button#twitter:active{
+    height: 40px;
+    width: 40px;
+}
+
+
+
 #searcher{
     display: inline;
 }
@@ -140,7 +207,7 @@ div#contact{
 
 ::placeholder {
     color: #404040;
-    opacity: 1; /* Firefox */
+    opacity: 1; /*Firefox and Chrome*/
 }
 
 #contact > form > label > .userinput{
@@ -208,7 +275,9 @@ button#shopping:active{
     transition: 400ms;
 }
 
-.navtext:hover{ letter-spacing: 1px; }
+.navtext:hover{
+    letter-spacing: 1px;
+}
 
 .synewave{
     font-family: Raleway, sans-serif;
@@ -226,7 +295,22 @@ button#shopping:active{
     font-size: 26px;
 }
 
-.menus:hover{ color: rgba(200,50,50,1); }
+.menus:hover{
+    color: rgba(200,50,50,1);
+}
+
+/*Used for the sub-menus in the footer*/
+.menus1{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.menus1:hover{
+    color: rgba(200,50,50,1);
+}
+
 
 .pagetitle{
     margin-top: 100px;
@@ -330,11 +414,11 @@ button#shopping:active{
         font-size: 30px;
     }
 
+    /*Divs of the navbar*/
     div#leftside{
         align-items: center;
         text-align: center;
     }
-
     div#rightside{
         margin-top: -5px;
     }
