@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../stylesheets/footer.css" />
+
 <div id="social">
     <button id="twitter" onclick="window.open('https://twitter.com/synewaveltd');"></button>
     <button id="facebook" onclick="window.open('https://www.facebook.com/synewaveltd/');"></button>

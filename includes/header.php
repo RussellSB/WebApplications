@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../stylesheets/header.css" />
+
 <!-- The icon at the upperleft of the site. -->
 <div id="iconbox" class="hovering">
     <a href="../page-structures/frontPage.php"><img src="../images/synewave_icon_blended.gif" id="syneicon"></a>
