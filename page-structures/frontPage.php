@@ -92,9 +92,7 @@
 </main>
 
 <footer>
-
     <?php include "../includes/footer.php"?>
-
 </footer>
 
 <!-- Added scripts necessary for site to function normally.
