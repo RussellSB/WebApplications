@@ -26,10 +26,10 @@
         <h1 class="pagetitle">Talk to us!</h1>
         <form method="POST" action="http://127.0.0.1:8080/WebApplications/phpfiles/contactUs.php">
             <label>
-                Full name: <input class="userinput" type="text" name="fullName" style="width: 100%;"><br><br>
-                Subject: <input class="userinput" type="text" name="subject" style="width: 200%"><br><br>
-                Main text: <textarea class="userinput" name="mainText" style="width: 350%; height: 100px"></textarea><br><br>
-                Email: <input class="userinput" type="email" name="email" style="width: 100%"><br><br>
+                Full name: <input class="userinput" type="text" name="fullName" style="width: 100%;" required><br><br>
+                Subject: <input class="userinput" type="text" name="subject" style="width: 200%" required><br><br>
+                Main text: <textarea class="userinput" name="mainText" style="width: 350%; height: 100px" required></textarea><br><br>
+                Email: <input class="userinput" type="email" name="email" style="width: 100%" required><br><br>
                 <br>
                 <input type="submit" style="font-weight: 800">
             </label>
