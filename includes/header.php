@@ -38,7 +38,6 @@
 
     <?php endif; ?>
 
-
 </div>
 
 <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
