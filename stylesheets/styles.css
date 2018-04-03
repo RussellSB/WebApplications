@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,800');
 @import url('../bootstrap/css/bootstrap.min.css');
 
-/* Overrides */
+/* Default stylings for the page */
 
 body{
     background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
@@ -54,7 +54,7 @@ input{
     color: rgba(50,50,50,1);
 }
 
-/* IDs */
+/* Concerned with contact us */
 
 #pagetext{
     font-family: Work Sans, sans-serif;
@@ -84,8 +84,7 @@ div#contact{
     background: rgba(60,0,0,1);
 }
 
-/* Classes */
-
+/* Concerned with about us */
 
 .pagetitle{
     margin-top: 100px;
@@ -109,46 +108,6 @@ div#contact{
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
-}
-
-/* Carousel */
-.carousel {
-    margin-top: 65px;
-    --main-height: 500px;
-    height: var(--main-height);
-    margin-bottom: 60px;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    background: rgba(0,0,0,0.5);
-    box-shadow: inset 0 0 20px 1px black;
-    z-index: 10;
-}
-
-/* Adds inset shadow to images in carousel. */
-.item:before{
-    box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 1);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: var(--main-height);
-    background-color: #777;
-}
-
-.carousel-inner > .item > img {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    object-fit: cover;
-    height: var(--main-height);
 }
 
 
