@@ -8,38 +8,21 @@
     <meta name="description" content="SyneWave - Music Store For All Your Favourites">
     <meta name="author" content="The Syne Bros.">
     <title>SyneWave</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
     <link rel="stylesheet" href="../stylesheets/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
+
 
 </head>
 
 <body>
 
-    <header id="navbar">
-        <nav>
-            <!-- The icon at the upperleft of the site. -->
-            <div id="iconbox" class="hovering">
-                <a href="frontPage.html"><img src="../images/synewave_icon_blended.gif" id="syneicon"></a>
-            </div>
+<header id="navbar">
+    <nav>
+        <?php include "../includes/header.php"?>
+    </nav>
+</header>
 
-            <!-- The left side of the header. Contains the title, and three menu items. -->
-            <div id="leftside">
-                <a href="frontPage.html" class="navtext synewave">SyneWave</a>
-                <a href="#" class="navtext menus">Products</a>
-                <a href="aboutPage.html" class="navtext menus" id="activemenu">About Us</a>
-                <a href="contactUs.html" class="navtext menus">Contact Us</a>
-            </div>
-
-            <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
-            <div id="rightside">
-                <form id="searcher">
-                    <input id="searchbox" type="text" placeholder="What's up?" onkeypress="handle(event)">
-                </form>
-                <button id="search" onClick="search_func()"></button>
-                <button id="shopping"></button>
-            </div>
-        </nav>
-    </header>
+<main>
 
     <div id="pagetext">
         <h1 class="pagetitle">Behind the Synes</h1>
@@ -94,7 +77,22 @@
 
     </div>
 
-    <script src="../javascript/script.js"></script>
+    <!-- Breaks to leave space for footer-->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+</main>
+
+<footer>
+    <?php include "../includes/footer.php"?>
+</footer>
+
+<script src="../javascript/script.js"></script>
 
 </body>
 
