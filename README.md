@@ -14,6 +14,7 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
   - *You should have a `WebApplications` folder inside `htdocs`*
 - Copy the file `WebApplications/settings/php.ini` to `xampp/php`.
 - Copy the file `WebApplications/settings/sendmail.ini` to `xampp/sendmail`.
+- Copy the file 'WebApplications/Data/' to 'xampp/mysql/'
 
 ### Linux
 - Clone this repository into `/opt/lampp/htdocs/`
