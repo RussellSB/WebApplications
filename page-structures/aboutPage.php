@@ -30,7 +30,7 @@
         <div class="person">
 
             <h2 class="name">Russell Sammut-Bonnici</h2>
-            <img class="selfpic" src="../images/RussellSB.png" alt="Portrait of Russell" />
+            <img class="selfpic" src="../images/RussellSB.jpeg" alt="Portrait of Russell" />
 
             <p class="aboutme">
                 Russell Sammut-Bonnici also known as "Russell Esby" had the idea for making the site on musical instruments.
@@ -46,7 +46,7 @@
         <div class="person">
 
             <h2 class="name">Andre Jenkins</h2>
-            <img class="selfpic" src="../images/AndreJ.png" alt="Portrait of Andre" />
+            <img class="selfpic" src="../images/AndreJ.jpg" alt="Portrait of Andre" />
 
             <p class="aboutme">
                 Andre Jenkins worked on the front end of this website. He managed to animate and perfect the header toolbar
@@ -62,7 +62,7 @@
         <div class="person">
 
             <h2 class="name">Sean Powell</h2>
-            <img class="selfpic" src="../images/SeanP.png" alt="Portrait of Sean" />
+            <img class="selfpic" src="../images/SeanP.jpg" alt="Portrait of Sean" />
 
             <p class="aboutme">
                 Sean Powell worked on the back end of this website. With supreme dedication to the martial arts of PHP he
