@@ -24,7 +24,7 @@
 
     <div id="contact">
         <h1 class="pagetitle">Talk to us!</h1>
-        <form method="POST" action="http://127.0.0.1:8080/WebApplications/phpfiles/contactUs.php">
+        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">
             <label>
                 Full name: <input class="userinput" type="text" name="fullName" style="width: 100%;" required><br><br>
                 Subject: <input class="userinput" type="text" name="subject" style="width: 200%" required><br><br>
