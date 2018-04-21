@@ -12,9 +12,9 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 - Navigate to your `xampp` folder, and open the `htdocs` folder.
 - Clone this repository in there.
   - *You should have a `WebApplications` folder inside `htdocs`*
-- Copy the file `WebApplications/settings/php.ini` to `xampp/php`.
-- Copy the file `WebApplications/settings/sendmail.ini` to `xampp/sendmail`.
-- Copy the file `WebApplications/Data/` to `xampp/mysql/`.
+- Navigate into `WebApplications/settings`
+  - Run `setup.bat` by double clicking on it.
+  - *For Windows 10 users, if the batch file does not work, run `setup.ps1` by right-clicking on it, and selecting `Run with Powershell`.*
 
 ### Linux
 - Clone this repository into `/opt/lampp/htdocs/`
@@ -29,7 +29,3 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
   - *If there is an X next to it, press on it to install the service.*
   - *If you are a Windows user and it doesn't work, run it as administrator and try again*
 - Go to your browser and load `localhost:8080/WebApplications/page-structures/frontPage.php`.
-
-
-
-
