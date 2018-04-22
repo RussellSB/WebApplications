@@ -13,8 +13,10 @@
   $databaseName = 'products';
   $tableName = 'productlist';
 
+  // Connects to the database
   $con = mysqli_connect($host,$user,$pass,$databaseName);
 
+  // If the connection fails, these error messages will be displayed.
   if (!$con) {
     echo 'Error: Unable to connect to MySQL.' . PHP_EOL;
     echo 'Debugging errno: ' . mysqli_connect_errno() . PHP_EOL;
@@ -22,19 +24,21 @@
     exit;
   }
 
-  // echo 'Success: A proper connection to MySQL was made! The my_db database is great.' . PHP_EOL;
-  // echo 'Host information: ' . mysqli_get_host_info($con) . PHP_EOL;
-
+  // Executes SQL query on the database specified by $con
   $sql = "SELECT * FROM productlist WHERE ProductID=3";
   $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
+  // Retrieves all the rows returned by the SQL query
   $rows = array();
   while($r = mysqli_fetch_assoc($query)) {
       $rows[] = $r;
   }
+
+  // Displays rows in content-type JSON and in PRETTY_PRINT
   header('Content-Type: application/json');
   echo json_encode($rows, JSON_PRETTY_PRINT);
 
+  // Closes connection to database
   mysqli_close($con);
 
 ?>
