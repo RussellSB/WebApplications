@@ -1,9 +1,13 @@
+# TODO : Update script file for
+#     httpd.conf movement
+#     my.ini movement
+
 echo 'Copying ssmtp configuration file...'
-sudo cp ssmtp.conf /etc/ssmtp/ssmtp.conf
+sudo cp ./linConfig/ssmtp.conf /etc/ssmtp/ssmtp.conf
 echo 'Copying revaliases configuration file...'
-sudo cp revaliases /etc/ssmtp/revaliases
+sudo cp ./linConfig/revaliases /etc/ssmtp/revaliases
 echo 'Copying php.ini file...'
-sudo cp phpLin.ini /opt/lampp/etc/php.ini
+sudo cp ./linConfig/phpLin.ini /opt/lampp/etc/php.ini
 echo 'Changing permissions...'
 sudo chmod 777 /etc/ssmtp
 sudo chmod 640 /etc/ssmtp/ssmtp.conf
