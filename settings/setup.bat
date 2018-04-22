@@ -7,7 +7,7 @@ echo Copying Apache server settings ...
 xcopy svrConfig\httpd.conf ..\..\..\apache\conf /Y
 echo Copying mySQL settings ...
 xcopy svrConfig\my.ini ..\..\..\mysql\bin /Y
-echo Copying DB data ...
-xcopy ..\data ..\..\..\mysql\ /Y
+echo Copying DB data
+C:\xampp\mysql\bin\mysql.exe --user=root --password= < ./sqlData/MySQLData.sql
 echo Done!
 PAUSE

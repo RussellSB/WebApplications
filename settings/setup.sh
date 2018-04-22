@@ -12,4 +12,6 @@ echo 'Changing permissions...'
 sudo chmod 777 /etc/ssmtp
 sudo chmod 640 /etc/ssmtp/ssmtp.conf
 sudo chown root:mail /etc/ssmtp/ssmtp.conf
-echo 'Installation complete!'
+echo 'Preparing mySQL database...'
+/opt/lampp/bin/mysql --binary-mode --user=root --password= < ./sqlData/MySQLData.sql
+echo 'Setup complete!'
