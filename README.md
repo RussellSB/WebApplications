@@ -14,7 +14,6 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
   - *You should have a `WebApplications` folder inside `htdocs`*
 - Navigate into `WebApplications/settings`
   - Run `setup.bat` by double clicking on it.
-  - *For Windows 10 users, if the batch file does not work, run `setup.ps1` by right-clicking on it, and selecting `Run with Powershell`.*
 
 ### Linux
 - Clone this repository into `/opt/lampp/htdocs/`
