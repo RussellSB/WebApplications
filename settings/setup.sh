@@ -13,6 +13,5 @@ sudo chmod 777 /etc/ssmtp
 sudo chmod 640 /etc/ssmtp/ssmtp.conf
 sudo chown root:mail /etc/ssmtp/ssmtp.conf
 echo 'Preparing mySQL database...'
-sudo cp -r ./sqlData/products ../../../var/mysql/
 /opt/lampp/bin/mysql --binary-mode --user=root --password= < ./sqlData/MySQLData.sql
 echo 'Setup complete!'
