@@ -19,7 +19,7 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 ### Linux
 - Clone this repository into `/opt/lampp/htdocs/`
 - Navigate to `WebApplications/settings/`
-- Run the script `ssmtp.sh` using the command `sudo ./ssmtp.sh`
+- Run the script `setup.sh` using the command `sudo ./setup.sh`
   - It's important you run this command as administrator, since it is placing important ssmtp configuration files and also changing their permissions.
 
 
