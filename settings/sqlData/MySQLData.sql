@@ -1,4 +1,4 @@
--- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Win32 (AMD64)
+-- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: products
 -- ------------------------------------------------------
@@ -14,6 +14,16 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Current Database: `products`
+--
+
+/*!40000 DROP DATABASE IF EXISTS `products`*/;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `products` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */;
+
+USE `products`;
 
 --
 -- Table structure for table `productlist`
@@ -58,4 +68,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-22 18:08:03
+-- Dump completed on 2018-04-22 18:27:11
