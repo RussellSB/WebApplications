@@ -43,7 +43,7 @@ CREATE TABLE `productlist` (
   PRIMARY KEY (`ProductID`),
   UNIQUE KEY `ProductID` (`ProductID`),
   KEY `ProductID_2` (`ProductID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -52,6 +52,7 @@ CREATE TABLE `productlist` (
 
 LOCK TABLES `productlist` WRITE;
 /*!40000 ALTER TABLE `productlist` DISABLE KEYS */;
+INSERT INTO `productlist` VALUES (2,101,'Yamaha SA2200 Semi-Acoustic Electric',90,275.85,'','sa2200.png'),(3,102,'Yamaha GL-1 Ukulele',75,55.50,'Midget hipster guitar','gl1.jpg');
 /*!40000 ALTER TABLE `productlist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,4 +69,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-23 11:42:27
+-- Dump completed on 2018-04-23 15:07:19
