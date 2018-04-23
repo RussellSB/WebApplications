@@ -1,4 +1,4 @@
--- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Win32 (AMD64)
+-- MySQL dump 10.16  Distrib 10.1.31-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: products
 -- ------------------------------------------------------
@@ -36,13 +36,13 @@ CREATE TABLE `productlist` (
   `ProductID` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `ProductName` text CHARACTER SET latin1 NOT NULL,
   `AmountInStock` int(11) NOT NULL,
-  `Cost` double NOT NULL,
+  `Cost` decimal(5,2) NOT NULL,
   `Description` text CHARACTER SET latin1 NOT NULL,
   `PictureLocation` text CHARACTER SET latin1,
   PRIMARY KEY (`ProductID`),
   UNIQUE KEY `ProductID` (`ProductID`),
   KEY `ProductID_2` (`ProductID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4294967296 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +51,7 @@ CREATE TABLE `productlist` (
 
 LOCK TABLES `productlist` WRITE;
 /*!40000 ALTER TABLE `productlist` DISABLE KEYS */;
-INSERT INTO `productlist` VALUES (3,'Charlie CX9500',5,20.5,'The best','localhost:8080/WebApplications/images/BANNERGuitar1.png');
+INSERT INTO `productlist` VALUES (1,'Charlie CX9500',5,127.00,'The best','localhost:8080/WebApplications/images/BANNERGuitar1.png'),(2,'Soule-500 Ukelele',20,60.00,'It wakes your soul right up','localhost:8080/WebApplications/images/BANNERUkelele1');
 /*!40000 ALTER TABLE `productlist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,4 +68,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-22 18:38:35
+-- Dump completed on 2018-04-23  8:45:27
