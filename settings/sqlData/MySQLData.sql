@@ -34,6 +34,7 @@ DROP TABLE IF EXISTS `productlist`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `productlist` (
   `ProductID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Category` int(11) NOT NULL,
   `ProductName` text CHARACTER SET latin1 NOT NULL,
   `AmountInStock` int(11) NOT NULL,
   `Cost` decimal(5,2) NOT NULL,
@@ -42,7 +43,7 @@ CREATE TABLE `productlist` (
   PRIMARY KEY (`ProductID`),
   UNIQUE KEY `ProductID` (`ProductID`),
   KEY `ProductID_2` (`ProductID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4294967296 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +52,6 @@ CREATE TABLE `productlist` (
 
 LOCK TABLES `productlist` WRITE;
 /*!40000 ALTER TABLE `productlist` DISABLE KEYS */;
-INSERT INTO `productlist` VALUES (1,'Charlie CX9500',5,127.00,'The best','localhost:8080/WebApplications/images/BANNERGuitar1.png'),(2,'Soule-500 Ukelele',20,60.00,'It wakes your soul right up','localhost:8080/WebApplications/images/BANNERUkelele1');
 /*!40000 ALTER TABLE `productlist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -68,4 +68,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-23  8:45:27
+-- Dump completed on 2018-04-23 11:42:27

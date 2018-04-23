@@ -25,7 +25,7 @@
   }
 
   // Executes SQL query on the database specified by $con
-  $sql = "SELECT * FROM productlist WHERE ProductID=3";
+  $sql = "SELECT * FROM productlist";
   $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
   // Retrieves all the rows returned by the SQL query
