@@ -9,9 +9,15 @@
       <meta name="author" content="Syne Bros.">
       <title>Nothin here ya goof</title>
       <link rel="stylesheet" href="../stylesheets/3d.css"/>
+      <link rel="stylesheet" href="../stylesheets/styles.css"/>
   </head>
 
   <body>
+    <header id="navbar">
+        <nav>
+            <?php include "../includes/header.php"?>
+        </nav>
+    </header>
     <audio autoplay loop>
       <source src="../includes/404music.mp3">
   </audio>
@@ -31,6 +37,12 @@
     <div align="center">
       <a class="link" href="https://www.youtube.com/watch?v=yD2FSwTy2lw&feature=youtu.be">music source</a>
     </div>
+    <br>
+    <br>
+
+    <footer>
+        <?php include "../includes/footer.php"?>
+    </footer>
   </body>
 
 </html>

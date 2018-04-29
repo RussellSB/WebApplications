@@ -38,6 +38,14 @@
         <a href="../page-structures/aboutPage.php" class="navtext menus">About Us</a>
         <a href="../page-structures/contactUs.php" class="navtext menus" id="activemenu">Contact Us</a>
 
+    <?php elseif(basename($_SERVER['PHP_SELF'])=="404.php") : ?>
+
+      <a href="../page-structures/frontPage.php" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
+      <a href="../page-structures/products.php" style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
+      <a href="../page-structures/aboutPage.php" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
+      <a href="../page-structures/contactUs.php" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
+      <a href="../page-structures/404.php" style="text-shadow:0 0 2px white;" class="navtext menus" id="activemenu">404!</a>
+
     <?php endif; ?>
 
 </div>

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
 
 body {
-  perspective: 1000px;
   overflow: hidden;
   animation-name: rainbow;
   animation-duration: 20s;
