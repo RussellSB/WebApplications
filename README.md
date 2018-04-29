@@ -33,3 +33,8 @@ If you are on Unix, you will also need SSMTP. Using Ubuntu, run this command: `s
 Before pushing to this repository, make sure to run `beforepush.bat` or `beforepush.sh`, depending on which OS you are on.
 This will update all the settings you may have modified in the server from within the repository.
 Running these scripts will help avoid a lot of trouble!
+
+## Minor note after pulling from repo...
+After pulling to be able to access the database tuples from phpMyAdmin, run 'setup.bat, or 'setup.sh', depending
+on which OS you have. This sets up progress in the database made by other people in the group project, that were
+previously pushed into the repository.
