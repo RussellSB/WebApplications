@@ -1,4 +1,6 @@
 <?php
+  error_reporting(E_ALL);
+  ini_set("display errors", TRUE);
   // useful for debugging --- outputs to browser console
   // function console_log( $data ){
   //   echo '<script>';
@@ -34,7 +36,6 @@
       $rows[] = $r;
   }
 
-  // Displays rows in content-type JSON and in PRETTY_PRINT
   header('Content-Type: application/json');
   echo json_encode($rows, JSON_PRETTY_PRINT);
 

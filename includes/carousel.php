@@ -11,10 +11,10 @@
     <div class="carousel-inner" role="listbox">
 
         <div class="item active">
-            <img class="first-slide" src="../images/BANNERGuitar1.png" alt="nogalaxy :(">
+            <img class="first-slide" src="../images/BANNERGuitar1.jpeg" alt="nogalaxy :(">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>The New Charlie CX9500</h1>
+                    <h1>The New Yamaha SA2200</h1>
                     <p>Early 60% Off Deal</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Purchase!</a></p>
                 </div>
@@ -22,10 +22,10 @@
         </div>
 
         <div class="item">
-            <img class="second-slide" src="../images/BANNERUkelele1.png" alt="not here :c">
+            <img class="second-slide" src="../images/BANNERUkulele1.jpeg" alt="not here :c">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>The Soule-500 Ukelele</h1>
+                    <h1>The Cordoba 15M</h1>
                     <p>Now on sale!</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Purchase!</a></p>
                 </div>
@@ -33,11 +33,11 @@
         </div>
 
         <div class="item">
-            <img class="third-slide" src="../images/BANNERGuitar2.jpg" alt="whoa">
+            <img class="third-slide" src="../images/BANNERUkulele2.jpg" alt="whoa">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>The Maxima '18</h1>
-                    <p>Coming soon</p>
+                    <h1>The Kala Makala Waterman</h1>
+                    <p>Water-proof ukulele!</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Check it out!</a></p>
                 </div>
             </div>
