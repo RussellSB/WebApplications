@@ -16,7 +16,7 @@
 
 <header id="navbar">
     <nav>
-        <?php include "../includes/header.php"?>
+        <?php include "header.php"?>
     </nav>
 </header>
 
@@ -73,7 +73,7 @@
 </main>
 
 <footer>
-    <?php include "../includes/footer.php"?>
+    <?php include "footer.php"?>
 </footer>
 
 

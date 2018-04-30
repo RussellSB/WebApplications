@@ -18,7 +18,7 @@
 
   <header id="navbar">
       <nav>
-          <?php include "../includes/header.php"?>
+          <?php include "header.php"?>
       </nav>
   </header>
   <br>
@@ -37,7 +37,7 @@
   <br>
   <br>
   <footer>
-      <?php include "../includes/footer.php"?>
+      <?php include "footer.php"?>
   </footer>
 
   <script src="../javascript/script.js"></script>
