@@ -17,5 +17,5 @@ echo 'Preparing mySQL database...'
 echo 'Copying mySQL config...'
 sudo cp ./svrConfig/my.cnf /opt/lampp/etc/my.cnf
 echo 'Copying Apache config...'
-sudo cp ./svrConfig/httpd.conf /opt/lampp/etc/httpd.conf
+sudo cp ./svrConfig/httpdLin.conf /opt/lampp/etc/httpd.conf
 echo 'Setup complete!'
