@@ -3,60 +3,60 @@
 
 <categories>
   <category>
-    <name> String </name>
+    <name> 1. String </name>
     <subcategory>
-      <name> Bass </name>
+      <name> 1. Bass </name>
     </subcategory>
     <subcategory>
-      <name> Guitar </name>
+      <name> 2. Harp </name>
     </subcategory>
     <subcategory>
-      <name> Harp </name>
+      <name> 3. Ukulele </name>
     </subcategory>
     <subcategory>
-      <name> Ukelele </name>
-    </subcategory>
-  </category>
-  <category>
-    <name> Woodwind </name>
-    <subcategory>
-      <name> Clarinets </name>
-    </subcategory>
-    <subcategory>
-      <name> Bagpipes </name>
-    </subcategory>
-    <subcategory>
-      <name> Panflutes </name>
+      <name> 4. Guitar </name>
     </subcategory>
   </category>
   <category>
-    <name> Brass </name>
+    <name> 2. Woodwind </name>
     <subcategory>
-      <name> Trumpets </name>
+      <name> 1. Clarinets </name>
     </subcategory>
     <subcategory>
-      <name> Saxophone </name>
+      <name> 2. Bagpipes </name>
     </subcategory>
     <subcategory>
-      <name> French Horn </name>
-    </subcategory>
-    <subcategory>
-      <name> Mellophone </name>
+      <name> 3. Panflutes </name>
     </subcategory>
   </category>
   <category>
-    <name> Keyboard </name>
+    <name> 3. Brass </name>
     <subcategory>
-      <name> Piano </name>
+      <name> 1. Trumpets </name>
     </subcategory>
     <subcategory>
-      <name> Accordian </name>
+      <name> 2. Saxophone </name>
     </subcategory>
     <subcategory>
-      <name> Electric-Keyboard </name>
+      <name> 3. French Horn </name>
     </subcategory>
     <subcategory>
-      <name> Synthesizer </name>
+      <name> 4. Mellophone </name>
+    </subcategory>
+  </category>
+  <category>
+    <name> 4. Keyboard </name>
+    <subcategory>
+      <name> 1. Piano </name>
+    </subcategory>
+    <subcategory>
+      <name> 2. Accordian </name>
+    </subcategory>
+    <subcategory>
+      <name> 3. Electric-Keyboard </name>
+    </subcategory>
+    <subcategory>
+      <name> 4. Synthesizer </name>
     </subcategory>
   </category>
 </categories>
