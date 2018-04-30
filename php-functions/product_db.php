@@ -36,7 +36,6 @@
       $rows[] = $r;
   }
 
-  // Displays rows in content-type JSON and in PRETTY_PRINT
   header('Content-Type: application/json');
   echo json_encode($rows, JSON_PRETTY_PRINT);
 
