@@ -2,6 +2,7 @@
 
 body {
   overflow: hidden;
+  overflow-y: auto;
   animation-name: rainbow;
   animation-duration: 20s;
   animation-timing-function: ease-in-out;
@@ -14,9 +15,10 @@ body {
   font-family: 'Patua One';
   text-align: center;
   animation-name: spin, depth;
-  animation-timing-function: cubic-bezier(.36,.06,.87,.09);
+  /* animation-timing-function: cubic-bezier(.36,.06,.87,.09); */
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 30s;
+  animation-duration: 5s;
   transform-style: preserve-3d;
   position: relative;
   padding: 0 0 0 0;
@@ -61,19 +63,29 @@ a{
                10px 10px 2px black;
 }
 
-@keyframes spin {
-  0% { transform: rotateX(20deg) rotateY(-20deg) rotateZ(-20deg); }
-  10% { transform: rotateX(-10deg) rotateY(30deg) rotateZ(1deg); }
-  20% { transform: rotateX(10deg) rotateY(10deg) rotateZ(-30deg); }
-  30% { transform: rotateX(-8deg) rotateY(-2deg) rotateZ(30deg); }
-  40% { transform: rotateX(24deg) rotateY(-3deg) rotateZ(20deg); }
-  50% { transform: rotateX(-10deg) rotateY(-34deg) rotateZ(10deg); }
-  60% { transform: rotateX(-2deg) rotateY(20deg) rotateZ(-8deg); }
-  70% { transform: rotateX(1deg) rotateY(-1deg) rotateZ(20deg); }
-  80% { transform: rotateX(30deg) rotateY(10deg) rotateZ(-2deg); }
-  90% { transform: rotateX(-20deg) rotateY(30deg) rotateZ(10deg); }
-  100% { transform: rotateX(20deg) rotateY(-20deg) rotateZ(-20deg); }
+.link{
+  animation-name: bounce;
+  animation-duration:8s;
+  transition: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.link:hover{
+  letter-spacing: 5px;
+}
 
+@keyframes bounce {
+  0% {font-size: 40px;}
+  50% {font-size: 80px;}
+  100% {font-size: 40px;}
+}
+
+@keyframes spin {
+  0% { transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg); }
+  25% { transform: rotateX(10deg) rotateY(90deg) rotateZ(-20deg); }
+  50% { transform: rotateX(20deg) rotateY(180deg) rotateZ(0deg); }
+  75% { transform: rotateX(10deg) rotateY(270deg) rotateZ(20deg); }
+  100% { transform: rotateX(20deg) rotateY(360deg) rotateZ(0deg); }
 }
 @keyframes depth {
   0% { text-shadow: 3px 0  20px red, -3px 0 20px blue; }
@@ -85,7 +97,8 @@ a{
   40% { background: rgba(10,20,50); }
   60% { background: rgba(20,50,10); }
   80% { background: rgba(50,20,10); }
-  100% { background: rgba(20,10,50); }
+  90% { background: rgba(20,10,50); }
+  100% { background: rgba(10,50,20); }
 }
 @keyframes disco {
   0%{color: red;}
@@ -93,5 +106,6 @@ a{
   40%{color: green;}
   60%{color: gold;}
   80%{color: yellow;}
-  100%{color: white;}
+  90%{color: white;}
+  100%{color: red;}
 }

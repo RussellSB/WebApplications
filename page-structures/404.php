@@ -30,10 +30,6 @@
         In the meantime, listen to this sweet tune! :)</p>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div align="center">
       <a class="link" href="https://www.youtube.com/watch?v=yD2FSwTy2lw&feature=youtu.be">music source</a>
     </div>
