@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="styleXML.xslt"?>
+
+<categories>
+  <category>
+    <name> String </name>
+    <subcategory>
+      <name> Bass </name>
+    </subcategory>
+    <subcategory>
+      <name> Guitar </name>
+    </subcategory>
+    <subcategory>
+      <name> Harp </name>
+    </subcategory>
+    <subcategory>
+      <name> Ukelele </name>
+    </subcategory>
+  </category>
+  <category>
+    <name> Woodwind </name>
+    <subcategory>
+      <name> Clarinets </name>
+    </subcategory>
+    <subcategory>
+      <name> Bagpipes </name>
+    </subcategory>
+    <subcategory>
+      <name> Panflutes </name>
+    </subcategory>
+  </category>
+  <category>
+    <name> Brass </name>
+    <subcategory>
+      <name> Trumpets </name>
+    </subcategory>
+    <subcategory>
+      <name> Saxophone </name>
+    </subcategory>
+    <subcategory>
+      <name> French Horn </name>
+    </subcategory>
+    <subcategory>
+      <name> Mellophone </name>
+    </subcategory>
+  </category>
+  <category>
+    <name> Keyboard </name>
+    <subcategory>
+      <name> Piano </name>
+    </subcategory>
+    <subcategory>
+      <name> Accordian </name>
+    </subcategory>
+    <subcategory>
+      <name> Electric-Keyboard </name>
+    </subcategory>
+    <subcategory>
+      <name> Synthesizer </name>
+    </subcategory>
+  </category>
+</categories>

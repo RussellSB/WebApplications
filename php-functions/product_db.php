@@ -1,4 +1,6 @@
 <?php
+  error_reporting(E_ALL);
+  ini_set("display errors", TRUE);
   // useful for debugging --- outputs to browser console
   // function console_log( $data ){
   //   echo '<script>';
