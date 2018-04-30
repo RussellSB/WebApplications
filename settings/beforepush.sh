@@ -9,5 +9,5 @@ sudo cp /etc/ssmtp/revaliases ./linConfig/revaliases
 echo 'Updating mySQL config...'
 sudo cp /opt/lampp/etc/my.cnf ./svrConfig/my.cnf
 echo 'Updating Apache config...'
-sudo cp /opt/lampp/etc/httpd.conf ./svrConfig/httpd.conf
+sudo cp /opt/lampp/etc/httpd.conf ./svrConfig/httpdLin.conf
 echo 'Update complete!'
