@@ -110,6 +110,64 @@ div#contact{
     padding: 15px;
 }
 
+/* Concerned with products */
+
+#categories {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    text-align: center;
+}
+
+.category {
+  background: linear-gradient(#8d2222, #3d1111);
+  border-radius: 25px;
+  box-shadow: 0 0 10px white;
+  width: 200px;
+  height: 200px;
+  line-height: 150px;
+  padding: 20px;
+  display: inline-block;
+  margin: 40px 40px 40px 40px;
+  vertical-align: middle;
+  transition: 1s;
+}
+
+.category:hover {
+  box-shadow: 0 0 40px gold;
+}
+
+.img {
+  margin:auto;
+  display: flex;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.category > .img > img{
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  transition: 1s;
+  margin: auto;
+}
+
+.category:hover > .img > img{
+  width: 100px;
+  height: 100px;
+}
+
+.category > p{
+  margin-top: -80px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.category:hover > p{
+  letter-spacing: 2px;
+}
+
 
 @keyframes oscillate {
     0%{ margin-top: 3px; }
@@ -261,5 +319,3 @@ div#contact{
         height: 250px;
     }
 }
-
-

@@ -22,6 +22,44 @@
 
 <main>
     <!--To be filled -->
+    <h1 class="pagetitle">Pick your category!</h1>
+    <div id="categories">
+      <a href="subcategory.php?category=1">
+        <div class="category">
+          <div class="img">
+            <img src="../images/guitaricon.png" alt="string">
+          </div>
+          <p> string </p>
+        </div>
+      </a>
+
+      <a href="subcategory.php?category=2">
+        <div class="category">
+          <div class="img">
+            <img src="../images/woodwindicon.png" alt="woodwind">
+          </div>
+          <p> woodwind </p>
+        </div>
+      </a>
+
+      <a href="subcategory.php?category=3">
+        <div class="category">
+          <div class="img">
+            <img src="../images/brassicon.png" alt="brass">
+          </div>
+          <p> brass </p>
+        </div>
+      </a>
+
+      <a href="subcategory.php?category=4">
+        <div class="category">
+          <div class="img">
+            <img src="../images/keyboardicon.png" alt="keyboard">
+          </div>
+          <p> keyboard </p>
+        </div>
+      </a>
+    </div>
 
     <!-- Breaks to leave space for footer-->
     <br />
