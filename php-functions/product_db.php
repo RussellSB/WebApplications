@@ -36,8 +36,12 @@
       $rows[] = $r;
   }
 
+  // print_r($rows);
+
   header('Content-Type: application/json');
   echo json_encode($rows, JSON_PRETTY_PRINT);
+
+  // echo json_last_error();
 
   // Closes connection to database
   mysqli_close($con);
