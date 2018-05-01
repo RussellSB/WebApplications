@@ -1,2 +1,3 @@
 ErrorDocument 404 /WebApplications/page-structures/404.php
 php_value include_path "C:/xampp/htdocs/WebApplications/includes"
+php_value include_path "/opt/lampp/htdocs/WebApplications/includes"
