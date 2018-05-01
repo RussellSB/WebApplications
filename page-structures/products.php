@@ -24,7 +24,7 @@
     <!--To be filled -->
     <h1 class="pagetitle">Pick your category!</h1>
     <div id="categories">
-      <a href="subcategory.php?category=1">
+      <a href="products/sub.php?category=1">
         <div class="category">
           <div class="img">
             <img src="../images/guitaricon.png" alt="string">
@@ -33,7 +33,7 @@
         </div>
       </a>
 
-      <a href="subcategory.php?category=2">
+      <a href="products/sub.php?category=2">
         <div class="category">
           <div class="img">
             <img src="../images/woodwindicon.png" alt="woodwind">
@@ -42,7 +42,7 @@
         </div>
       </a>
 
-      <a href="subcategory.php?category=3">
+      <a href="products/sub.php?category=3">
         <div class="category">
           <div class="img">
             <img src="../images/brassicon.png" alt="brass">
@@ -51,7 +51,7 @@
         </div>
       </a>
 
-      <a href="subcategory.php?category=4">
+      <a href="products/sub.php?category=4">
         <div class="category">
           <div class="img">
             <img src="../images/keyboardicon.png" alt="keyboard">

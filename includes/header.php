@@ -1,8 +1,13 @@
-<link rel="stylesheet" href="../stylesheets/header.css" />
+<?php
+  $currPath = "http://$_SERVER[HTTP_HOST]/WebApplications/";
+  // echo "<h1>". basename($_SERVER['PHP_SELF']) ."</h1>";
+?>
+
+<link rel="stylesheet" href="<?= $currPath . "stylesheets/header.css"?>" />
 
 <!-- The icon at the upperleft of the site. -->
 <div id="iconbox" class="hovering">
-    <a href="../page-structures/frontPage.php"><img src="../images/synewave_icon_blended.gif" id="syneicon"></a>
+    <a href="<?= $currPath . "page-structures/frontPage.php"?>"><img src="<?= $currPath . "images/synewave_icon_blended.gif"?>" id="syneicon"></a>
 </div>
 
 <!-- The left side of the header. Contains the title, and three menu items, highlighted after detecting current page -->
@@ -12,40 +17,40 @@
     <!--These are conditions that detect the active menu by getting the current php file name and setting which to highlight accordingly-->
     <?php if(basename($_SERVER['PHP_SELF'])=="frontPage.php") :?>
 
-        <a href="../page-structures/frontPage.php" class="navtext synewave" id="activemenu">SyneWave</a>
-        <a href="../page-structures/products.php" class="navtext menus">Products</a>
-        <a href="../page-structures/aboutPage.php" class="navtext menus">About Us</a>
-        <a href="../page-structures/contactUs.php" class="navtext menus">Contact Us</a>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" class="navtext synewave" id="activemenu">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  class="navtext menus">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" class="navtext menus">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" class="navtext menus">Contact Us</a>
 
     <?php elseif(basename($_SERVER['PHP_SELF'])=="products.php" or
-        basename($_SERVER['PHP_SELF'])=="subcategory.php") : ?>
+        basename($_SERVER['PHP_SELF'])=="sub.php") : ?>
 
-        <a href="../page-structures/frontPage.php" class="navtext synewave">SyneWave</a>
-        <a href="../page-structures/products.php" class="navtext menus" id="activemenu">Products</a>
-        <a href="../page-structures/aboutPage.php" class="navtext menus">About Us</a>
-        <a href="../page-structures/contactUs.php" class="navtext menus">Contact Us</a>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" class="navtext synewave">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  class="navtext menus" id="activemenu">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" class="navtext menus">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" class="navtext menus">Contact Us</a>
 
     <?php elseif(basename($_SERVER['PHP_SELF'])=="aboutPage.php") : ?>
 
-        <a href="../page-structures/frontPage.php" class="navtext synewave">SyneWave</a>
-        <a href="../page-structures/products.php" class="navtext menus">Products</a>
-        <a href="../page-structures/aboutPage.php" class="navtext menus" id="activemenu">About Us</a>
-        <a href="../page-structures/contactUs.php" class="navtext menus">Contact Us</a>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" class="navtext synewave">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  class="navtext menus">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" class="navtext menus" id="activemenu">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" class="navtext menus">Contact Us</a>
 
     <?php elseif(basename($_SERVER['PHP_SELF'])=="contactUs.php") : ?>
 
-        <a href="../page-structures/frontPage.php" class="navtext synewave">SyneWave</a>
-        <a href="../page-structures/products.php" class="navtext menus">Products</a>
-        <a href="../page-structures/aboutPage.php" class="navtext menus">About Us</a>
-        <a href="../page-structures/contactUs.php" class="navtext menus" id="activemenu">Contact Us</a>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" class="navtext synewave">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  class="navtext menus">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" class="navtext menus">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" class="navtext menus" id="activemenu">Contact Us</a>
 
     <?php elseif(basename($_SERVER['PHP_SELF'])=="404.php") : ?>
 
-      <a href="../page-structures/frontPage.php" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
-      <a href="../page-structures/products.php" style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
-      <a href="../page-structures/aboutPage.php" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
-      <a href="../page-structures/contactUs.php" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
-      <a href="../page-structures/404.php" style="text-shadow:0 0 2px white;" class="navtext menus" id="activemenu">404!</a>
+      <a href="<?= $currPath . "page-structures/frontPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
+      <a href="<?= $currPath . "page-structures/products.php"?>"  style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
+      <a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
+      <a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
+      <a href="<?= $currPath . "page-structures/404.php"?>"       style="text-shadow:0 0 2px white;" class="navtext menus" id="activemenu">404!</a>
 
     <?php endif; ?>
 
