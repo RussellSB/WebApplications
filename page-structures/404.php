@@ -8,8 +8,8 @@
       <meta name="description" content="How did you find this?">
       <meta name="author" content="Syne Bros.">
       <title>Nothin here ya goof</title>
-      <link rel="stylesheet" href="../stylesheets/3d.css"/>
-      <link rel="stylesheet" href="../stylesheets/styles.css"/>
+      <link rel="stylesheet" href="/WebApplications/stylesheets/3d.css"/>
+      <link rel="stylesheet" href="/WebApplications/stylesheets/styles.css"/>
   </head>
 
   <body>
@@ -19,8 +19,8 @@
         </nav>
     </header>
     <audio autoplay loop>
-      <source src="../includes/404music.mp3">
-  </audio>
+      <source src="/WebApplications/includes/404music.mp3">
+    </audio>
     <p class="spinner" text="404!">404!</p>
     <p class="spinner" style="font-size: 60px;"
         text="This page does not exist unfortunately! :(">

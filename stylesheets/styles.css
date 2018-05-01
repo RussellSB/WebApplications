@@ -131,7 +131,7 @@ div#contact{
   display: inline-block;
   margin: 40px 40px 40px 40px;
   vertical-align: middle;
-  transition: 1s;
+  transition: 300ms;
 }
 
 .category:hover {
@@ -149,7 +149,7 @@ div#contact{
   width: 70px;
   height: 70px;
   display: inline-block;
-  transition: 1s;
+  transition: 300ms;
   margin: auto;
 }
 
@@ -161,14 +161,62 @@ div#contact{
 .category > p{
   margin-top: -80px;
   font-size: 20px;
-  transition: 1s;
+  transition: 300ms;
+  font-family: 'Raleway', sans-serif;
+}
+
+.category > p.subcategory{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 0 0;
+  line-height: 30px;
 }
 
 .category:hover > p{
   letter-spacing: 2px;
 }
 
+.subcategory{
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
 
+/* Products - Subcategory DIV colors */
+
+#sub1 {
+  background: linear-gradient(#8d2222, #3d1111);
+}
+
+#sub1:hover {
+  box-shadow: 0 0 40px #af5555;
+}
+
+#sub2 {
+  background: linear-gradient(#843c20, #621a09);
+}
+
+#sub2:hover {
+  box-shadow: 0 0 40px #b76f53;
+}
+
+#sub3 {
+  background: linear-gradient(#845220, #623008);
+}
+
+#sub3:hover {
+  box-shadow: 0 0 40px #a78553;
+}
+
+#sub4 {
+  background: linear-gradient(#84203e, #62081c);
+}
+
+#sub4:hover {
+  box-shadow: 0 0 40px #a7536f;
+}
+
+/* Animations */
 @keyframes oscillate {
     0%{ margin-top: 3px; }
     50%{ margin-top: -3px; }
