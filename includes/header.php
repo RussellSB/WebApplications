@@ -17,7 +17,8 @@
         <a href="../page-structures/aboutPage.php" class="navtext menus">About Us</a>
         <a href="../page-structures/contactUs.php" class="navtext menus">Contact Us</a>
 
-    <?php elseif(basename($_SERVER['PHP_SELF'])==("products.php" or "subcategory.php")) : ?>
+    <?php elseif(basename($_SERVER['PHP_SELF'])=="products.php" or
+        basename($_SERVER['PHP_SELF'])=="subcategory.php") : ?>
 
         <a href="../page-structures/frontPage.php" class="navtext synewave">SyneWave</a>
         <a href="../page-structures/products.php" class="navtext menus" id="activemenu">Products</a>

@@ -15,7 +15,7 @@
   <body>
     <header id="navbar">
         <nav>
-            <?php include "header.php"?>
+            <?php include "../includes/header.php"?>
         </nav>
     </header>
     <audio autoplay loop>
@@ -37,7 +37,7 @@
     <br>
 
     <footer>
-        <?php include "footer.php"?>
+        <?php include "../includes/footer.php"?>
     </footer>
   </body>
 
