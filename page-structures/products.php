@@ -14,65 +14,42 @@
 
 <body>
 
-<header id="navbar">
-    <nav>
-        <?php include "../includes/header.php"?>
-    </nav>
-</header>
+  <header id="navbar">
+      <nav>
+          <?php include "../includes/header.php"?>
+      </nav>
+  </header>
 
-<main>
-    <!--To be filled -->
-    <h1 class="pagetitle">Pick your category!</h1>
-    <div id="categories">
-      <a href="products/sub.php?category=1">
-        <div class="category">
-          <div class="img">
-            <img src="../images/guitaricon.png" alt="string">
-          </div>
-          <p> string </p>
-        </div>
-      </a>
+  <main>
 
-      <a href="products/sub.php?category=2">
-        <div class="category">
-          <div class="img">
-            <img src="../images/woodwindicon.png" alt="woodwind">
-          </div>
-          <p> woodwind </p>
-        </div>
-      </a>
+    <!-- TODO: Add sidebar -->
+    <!-- TODO: Add support for category queries (category and subcategory) -->
 
-      <a href="products/sub.php?category=3">
-        <div class="category">
-          <div class="img">
-            <img src="../images/brassicon.png" alt="brass">
-          </div>
-          <p> brass </p>
-        </div>
-      </a>
+    <?php
+      require "../php-functions/db.php";
+      $sql = "SELECT * FROM productlist";
+      $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
-      <a href="products/sub.php?category=4">
-        <div class="category">
-          <div class="img">
-            <img src="../images/keyboardicon.png" alt="keyboard">
-          </div>
-          <p> keyboard </p>
-        </div>
-      </a>
-    </div>
+      // Retrieves all the rows returned by the SQL query
+      $rows = array();
+      echo "<div class=\"items\">";
+      while($r = mysqli_fetch_assoc($query)) {
+          echo "<div class=\"product\">";
+          echo "<div class=\"image\">";
+          echo "<img src=http://$_SERVER[HTTP_HOST]/WebApplications/productImages/"
+           . $r['PictureLocation'] .
+           " alt=" . $r['PictureLocation'] . "></img>";
+          echo "</div>";
+          echo "<p> " . $r['ProductName'] . "</p>";
+          echo "<h3> $" . $r['Cost']  . "</h2>";
+          echo "</div>";
+      }
+    ?>
+  </main>
 
-    <!-- Breaks to leave space for footer-->
-    <br />
-    <br />
-
-</main>
-
-<footer>
-    <?php include "../includes/footer.php"?>
-</footer>
-
-
-<script src="../javascript/script.js"></script>
+  <footer>
+      <?php include "../includes/footer.php"?>
+  </footer>
 
 </body>
 

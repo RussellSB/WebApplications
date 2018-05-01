@@ -110,7 +110,7 @@ div#contact{
     padding: 15px;
 }
 
-/* Concerned with products */
+/* Concerned with category pages */
 
 #categories {
     width: 75%;
@@ -214,6 +214,41 @@ div#contact{
 
 #sub4:hover {
   box-shadow: 0 0 40px #a7536f;
+}
+
+/* Concerned with product page */
+.items {
+  width: 90%;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
+
+.image {
+  width: 300px;
+  height: 220px;
+}
+
+.product {
+  background: linear-gradient(#8d2222, #3d1111);
+  display: inline-block;
+  color: white;
+  margin: 40px 40px 40px 40px;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.product > .image > img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 35px;
+  margin-top: 5px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
 }
 
 /* Animations */
