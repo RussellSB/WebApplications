@@ -64,11 +64,6 @@
     <!-- Breaks to leave space for footer-->
     <br />
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 
 </main>
 
