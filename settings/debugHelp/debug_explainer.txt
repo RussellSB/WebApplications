@@ -1,0 +1,2 @@
+php_xdebug-2.6.0-7.2-vc15.dll - PHP 7 on XAMPP on WINDOWS 10 XDEBUG Library.
+                                --- Move to /xampp/php/ext/ --- not now, need to check compatability with other systems (linux)
