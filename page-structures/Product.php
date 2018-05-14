@@ -23,7 +23,8 @@
 <main>
 <?php
 
-$id = $_GET["pid"];
+// $id = $_GET["pid"];
+$id = $_POST["prod"];
 require "../php-functions/db.php";
 $sql = "SELECT * FROM productlist WHERE ProductID = " . $id . ";";
 $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
