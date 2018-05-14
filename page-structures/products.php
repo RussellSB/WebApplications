@@ -26,9 +26,24 @@
     <!-- TODO: Add support for category queries (category and subcategory) -->
 
     <?php
+      if (isset($_GET['category'])){
+        $category = $_GET['category'];
+      }
+      else{
+        $category = NULL;
+      }
+
       require "../php-functions/db.php";
-      $sql = "SELECT * FROM productlist";
+
+      if($category != NULL){
+        $sql = "SELECT * FROM productlist WHERE ParentCategory=" . $category;
+      }
+      else{
+        $sql = "SELECT * FROM productlist";
+      }
       $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
+
+      if (mysqli_num_rows($query)==0) { header("location:404.php"); }
 
       // Retrieves all the rows returned by the SQL query
       $rows = array();

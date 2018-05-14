@@ -37,19 +37,19 @@
         </div>
       </a>
 
-      <a href="products/sub.php?category=1">
+      <a href="products/sub.php?category=2">
         <div class="category" id="sub2">
           <p class="subcategory"> harp </p>
         </div>
       </a>
 
-      <a href="products/sub.php?category=1">
+      <a href="products/sub.php?category=3">
         <div class="category" id="sub3">
           <p class="subcategory"> ukelele </p>
         </div>
       </a>
 
-      <a href="products/sub.php?category=1">
+      <a href="products/sub.php?category=4">
         <div class="category" id="sub4">
           <p class="subcategory"> guitar </p>
         </div>
