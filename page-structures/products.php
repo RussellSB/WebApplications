@@ -68,7 +68,7 @@
           echo "<h3> $" . $r['Cost']  . "</h2>";
           $x = $r['ProductID'];
           echo "<form action=\"singleproduct.php\" method=\"post\">";
-          echo "<button name=\"prod\" type=\"submit\" value=" . $r['ProductID'] . "> Product Page </button>";
+          echo "<button name=\"prod\" type=\"submit\" value=" . $r['ProductID'] . "> Buy Now </button>";
           echo "</form>";
         //   echo "<button onClick='toProducts($x)' type='button' name='Product_Page' value=$x >" . "Product page" . "</button>";
           echo "</div>";

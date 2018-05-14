@@ -284,6 +284,10 @@ us4{
   border-radius: 10px;
 }
 
+BuyNow{
+    color: linear-gradient(#8d2222, #3d1111);
+}
+
 /* Individual product */
 .pickedmain {
     width: 90%;
