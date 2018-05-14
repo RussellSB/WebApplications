@@ -29,9 +29,9 @@
       require "../php-functions/db.php";
       $sql = "SELECT * FROM productlist";
       $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
-
       // Retrieves all the rows returned by the SQL query
       $rows = array();
+      $x = 0;
       echo "<div class=\"items\">";
       while($r = mysqli_fetch_assoc($query)) {
           echo "<div class=\"product\">";
@@ -42,15 +42,24 @@
           echo "</div>";
           echo "<p> " . $r['ProductName'] . "</p>";
           echo "<h3> $" . $r['Cost']  . "</h2>";
+          $x = $r['ProductID'];
+          echo "<select><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>";
+          echo "<button type='button' onClick='goToProducts($x)' name='addToCart' value=$x >" . "Product page" . "</button>";
           echo "</div>";
       }
+
+      function toProduct($productID){
+
+      }
     ?>
+
   </main>
 
   <footer>
       <?php include "../includes/footer.php"?>
   </footer>
 
+  <script src="../javascript/script.js"></script>
 </body>
 
 </html>
