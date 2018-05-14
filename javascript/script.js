@@ -32,3 +32,8 @@ function toCart(){
 function goToProduct(productID){
     location.href = "../page-structures/Product.php?pid=" + productID;
 }
+
+function toProducts(productID){
+    alert(productID);
+    location.href = "../page-structures/Product.php?pid=" + productID;
+}

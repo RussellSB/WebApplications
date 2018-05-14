@@ -59,13 +59,8 @@
           echo "<p> " . $r['ProductName'] . "</p>";
           echo "<h3> $" . $r['Cost']  . "</h2>";
           $x = $r['ProductID'];
-          echo "<select><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>";
-          echo "<button type='button' onClick='goToProducts($x)' name='addToCart' value=$x >" . "Product page" . "</button>";
+          echo "<button onClick='toProducts($x)' type='button' name='Product_Page' value=$x >" . "Product page" . "</button>";
           echo "</div>";
-      }
-
-      function toProduct($productID){
-
       }
     ?>
 

@@ -58,7 +58,7 @@
         <a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
         <a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
 
-    <?php elseif(basename($_SERVER['PHP_SELF'])=="product.php") : ?>
+    <?php elseif(basename($_SERVER['PHP_SELF'])=="Product.php") : ?>
         <a href="<?= $currPath . "page-structures/frontPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
         <a href="<?= $currPath . "page-structures/products.php"?>"  style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
         <a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
