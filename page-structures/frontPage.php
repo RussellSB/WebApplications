@@ -22,8 +22,6 @@
 
 <?php include "../includes/carousel.php"?>
 
-<?php include "../includes/sidebar.php"?>
-
 <main>
 
     <!-- TODO: Replace searchbar functionality with PHP code -->

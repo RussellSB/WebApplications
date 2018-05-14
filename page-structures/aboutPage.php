@@ -14,8 +14,6 @@
 
 </head>
 
-<?php include "../includes/sidebar.php"?>
-
 <body>
 
 <header id="navbar">

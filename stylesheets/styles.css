@@ -11,26 +11,35 @@ body{
     grid-template-rows: 60px auto 150px;
     grid-template-columns: minmax(200px, 1fr) 12fr;
     grid-template-areas: "header header"
-                         "sidebar main "
-                         "footer footer"
+                         "main main "
+                         "footer footer";
 }
 
 /* Grid setups */
 #frontpagebody{
     grid-template-rows: 60px auto auto 150px;
-    grid-template-columns: minmax(200px, 1fr) 12fr;
     grid-template-areas: "header header"
                          "carousel carousel"
+                         "main main"
+                         "footer footer";
+}
+
+#productbody{
+    display: grid;
+    grid-template-areas: "header header"
                          "sidebar main"
-                         "footer footer"
+                         "footer footer";
 }
 
 #main{
     position: absolute;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 }
 
 main{
     grid-area: main;
+    overflow-y: auto;
 }
 
 a{
