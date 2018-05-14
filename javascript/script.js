@@ -1,4 +1,5 @@
 //When the user presses "Enter" (key code 13) redirect to search_func
+
 function handle(e){
     if(e.keyCode === 13){
         search_func()
@@ -12,8 +13,22 @@ function search_func(){
     if(address===""){
         alert("Nothing inputted");
     }else{
-        //write your specific code from here
-        alert("You are searching: " + address);
+        if(address.indexOf(">") >= 0 || address.indexOf("<") >= 0 || address.indexOf("%") >= 0){
+            alert("Invalid character in search, please do not use <, > or %");
+        }else {
+            var Query  = document.getElementById("searchbox").value;
+            //write your specific code from here
+            //todo call php function to search the database and return the top 5 results.
+            location.href = "../page-structures/searching.php?query=" + Query;
+        }
     }
+}
 
+function toCart(){
+    alert("Do i work?");
+    location.href = "../page-structures/cart.php"
+}
+
+function goToProduct(productID){
+    location.href = "../page-structures/Product.php?pid=" + productID;
 }

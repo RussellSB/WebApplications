@@ -52,8 +52,18 @@
       <a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
       <a href="<?= $currPath . "page-structures/404.php"?>"       style="text-shadow:0 0 2px white;" class="navtext menus" id="activemenu">404!</a>
 
-    <?php endif; ?>
+    <?php elseif(basename($_SERVER['PHP_SELF'])=="searching.php") : ?>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
 
+    <?php elseif(basename($_SERVER['PHP_SELF'])=="product.php") : ?>
+        <a href="<?= $currPath . "page-structures/frontPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a>
+        <a href="<?= $currPath . "page-structures/products.php"?>"  style="text-shadow:0 0 2px white;" class="navtext menus">Products</a>
+        <a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a>
+        <a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a>
+    <?php endif; ?>
 </div>
 
 <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
@@ -62,5 +72,5 @@
         <input id="searchbox" type="text" placeholder="Search for Products" onkeypress="handle(event)">
     </form>
     <button id="search" onClick="search_func()"></button>
-    <button id="shopping"></button>
+    <button id="shopping" onClick="toCart()"></button>
 </div>
