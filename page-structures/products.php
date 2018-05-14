@@ -50,6 +50,14 @@
       $x = 0;
       echo "<div class=\"items\">";
       while($r = mysqli_fetch_assoc($query)) {
+
+          $maxPos = 100;
+          if (strlen($r['ProductName']) > $maxPos)
+          {
+              $lastPos = ($maxPos - 3) - strlen($r['ProductName']);
+              $r['ProductName'] = substr($r['ProductName'], 0, strrpos($r['ProductName'], ' ', $lastPos)) . '...';
+          }
+
           echo "<div class=\"product\">";
           echo "<div class=\"image\">";
           echo "<img src=http://$_SERVER[HTTP_HOST]/WebApplications/productImages/"
@@ -74,6 +82,7 @@
   </footer>
 
   <script src="../javascript/script.js"></script>
+
 </body>
 
 </html>

@@ -32,15 +32,16 @@ $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 $rows = array();
 $x = 0;
 
-echo "<div class=\"item\">";
+echo "<div class=\"pickedmain\">";
+echo "<div class=\"pickeditem\">";
 $r = mysqli_fetch_assoc($query);
 
-echo "<div class=\"image\">";
+echo "<div class=\"pickedimage\">";
 echo "<img src=http://$_SERVER[HTTP_HOST]/WebApplications/productImages/"
     . $r['PictureLocation'] .
     " alt=" . $r['PictureLocation'] . "></img>";
 echo "</div>";
-echo "<p> " . $r['ProductName'] . "</p>";
+echo "<p id=\"productname\"> " . $r['ProductName'] . "</p>";
 echo "<p> " . $r['Description'] . "</p>";
 echo "<p> Make: " . $r['Make'] . "</p>";
 echo "<p> No. in stock: " . $r['AmountInStock'] . "</p>";
@@ -48,6 +49,7 @@ echo "<h3> $" . $r['Cost'] . "</h2>";
 echo "<select><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>";
 echo "<button type='button' name='addToCart' value=$x>" . "Add to Cart" . "</button>";
 
+echo "</div>";
 echo "</div>";
 ?>
 </main>
