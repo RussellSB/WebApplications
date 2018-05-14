@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
 </head>
 
-<body>
+<body id="frontpagebody">
 
 <header id="navbar">
     <nav>
@@ -20,11 +20,15 @@
     </nav>
 </header>
 
+<?php include "../includes/carousel.php"?>
+
+<?php include "../includes/sidebar.php"?>
+
 <main>
 
     <!-- TODO: Replace searchbar functionality with PHP code -->
 
-    <?php include "../includes/carousel.php"?>
+    
 
     <!-- TODO: Add content below the carousel -->
 

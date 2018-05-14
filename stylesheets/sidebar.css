@@ -1,0 +1,20 @@
+#sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(rgb(82, 9, 5), rgb(43, 3, 1));
+    box-shadow: 0 0 10px rgb(241, 143, 143);
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(3, 50px);
+}
+
+a.sidelinks{
+    text-align: center;
+    padding: 30% 0;
+    color: white;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(167, 0, 0), rgb(100,0,0))
+}

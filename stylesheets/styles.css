@@ -7,11 +7,30 @@
 
 body{
     background: linear-gradient(rgba(70,0,0,1),rgba(10,0,0,1)) no-repeat center center fixed;
-    margin: 0;
+    display:grid;
+    grid-template-rows: 60px auto 150px;
+    grid-template-columns: minmax(200px, 1fr) 12fr;
+    grid-template-areas: "header header"
+                         "sidebar main "
+                         "footer footer"
+}
+
+/* Grid setups */
+#frontpagebody{
+    grid-template-rows: 60px auto auto 150px;
+    grid-template-columns: minmax(200px, 1fr) 12fr;
+    grid-template-areas: "header header"
+                         "carousel carousel"
+                         "sidebar main"
+                         "footer footer"
 }
 
 #main{
     position: absolute;
+}
+
+main{
+    grid-area: main;
 }
 
 a{

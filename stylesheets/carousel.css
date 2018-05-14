@@ -1,10 +1,9 @@
 /* Stylings for carousel */
 
 .carousel {
-    margin-top: 65px;
     --main-height: 500px;
     height: var(--main-height);
-    margin-bottom: 60px;
+    grid-area: carousel;
 }
 
 /* Since positioning the image, we need to help out the caption */

@@ -1,8 +1,7 @@
 /*Stylings for the header*/
 
 header{
-    position: fixed;
-    width: 99%;
+    width: 100%;
     top: 10px;
     min-width: 1166px;
 }
@@ -13,16 +12,10 @@ header{
 }
 
 #navbar{
-    position: fixed;
-    top: 10px;
     z-index: 20;
     background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.95));
-    padding: 8px 8px 8px 8px;
-    margin-top: -10px;
-    margin-bottom: 0;
-    height: 65px;
-    min-width: 100%;
     box-shadow: 5px 5px 10px rgba(40,10,10,1);
+    grid-area: header;
 }
 
 #syneicon{
@@ -44,8 +37,6 @@ div#leftside{
 
 div#rightside{
     float: right;
-    margin-top: 1px;
-    margin-right: -8px;
 }
 
 #searcher{

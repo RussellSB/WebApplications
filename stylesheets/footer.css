@@ -3,14 +3,9 @@
 footer{
     z-index: 20;
     background: linear-gradient(rgba(100, 20, 20, 0.95),rgba(10, 0, 0, 1));
-    padding: 8px 8px 8px 8px;
-    margin-top: -10px;
-    margin-bottom: 0;
-    height: 200px;
     box-shadow: 5px 5px 10px rgba(20,10,10,1);
-
-    position: relative;
-
+    grid-area: footer;
+    height: 200px;
 }
 
 div#subMenus{
