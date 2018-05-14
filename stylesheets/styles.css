@@ -69,6 +69,24 @@ div#contact{
     width: 50%;
 }
 
+/* Widths of user input fields */
+us1{
+    width: 100%;
+}
+
+us2{
+    width: 200%;
+}
+
+us3{
+    width: 350%;
+    height: 100px;
+}
+
+us4{
+    width: 100%;
+}
+
 #contact > form > label > .userinput{
     box-shadow: 0 0 20px 3px black;
     background: rgba(40,0,0,1);
