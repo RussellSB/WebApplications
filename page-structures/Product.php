@@ -29,8 +29,7 @@
  * Time: 15:23
  */
 
-//$id = $_GET["ProductID"];
-$id = 3;
+$id = $_GET["pid"];
 require "../php-functions/db.php";
 $sql = "SELECT * FROM productlist WHERE ProductID = " . $id . ";";
 $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
