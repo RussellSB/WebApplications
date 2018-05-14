@@ -216,6 +216,14 @@ div#contact{
   box-shadow: 0 0 40px #a7536f;
 }
 
+#sub5 {
+  background: linear-gradient(#A84444, #762222);
+}
+
+#sub5:hover {
+    box-shadow: 0 0 40px #a7321f;
+}
+
 /* Concerned with product page */
 .items {
   width: 90%;

@@ -59,6 +59,15 @@
           <p> keyboard </p>
         </div>
       </a>
+
+      <a href="products.php">
+        <div class="category"id="sub5">
+          <div class="img">
+            <img src="../images/all.png" alt="all">
+          </div>
+          <p> all products </p>
+        </div>
+      </a>
     </div>
 
     <!-- Breaks to leave space for footer-->
