@@ -237,6 +237,12 @@ div#contact{
   height: 220px;
 }
 
+.productname {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .product {
   background: linear-gradient(#8d2222, #3d1111);
   display: inline-block;
@@ -257,6 +263,45 @@ div#contact{
   margin-top: 5px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
+}
+
+/* Individual product */
+.pickedmain {
+    width: 90%;
+    margin: auto;
+}
+
+.pickeditem {
+    width: 90%;
+    margin: 130px 40px 40px 40px;
+    border-radius: 30px;
+    padding: 20px;
+    background: linear-gradient(#a7321f, #3d1111);
+    display: inline-block;
+    color: white;
+    height: 500px;
+}
+
+.pickedimage {
+    float: left;
+    border: black;
+    height : 450px;
+    width : 200px;
+    margin-right: 150px;
+}
+
+.pickedimage > img {
+    float: left;
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #000;
+}
+
+#productname {
+    font-weight: 400;
+    font-size: 25px;
 }
 
 /* Animations */
