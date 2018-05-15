@@ -41,6 +41,23 @@ session_start();
 $listItems = array();
 $has_session = session_status() == PHP_SESSION_ACTIVE;
 
+// Connects to database
+require "db.php";
+
+// Retrieves item to be added to cart from database
+$sql = "SELECT * FROM productlist WHERE ProductID=" . $_POST['cartobj'];
+$query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
+
+// Retrieves item - and appends quantity to it.
+$newobj = mysqli_fetch_assoc($query);
+$newobj['quantity'] = $_POST['quantity'];
+
+// Appends item+quantity to the session global array.
+$_SESSION[$_POST['cartobj']] = $newobj;
+
+// Debug - Prints the contents of the session variable.
+print_r($_SESSION);
+
 ?>
 </body>
 

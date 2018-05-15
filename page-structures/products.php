@@ -28,7 +28,10 @@
     <!-- TODO: Add support for category queries (category and subcategory) -->
 
     <?php
-      if (isset($_POST['query'])){
+      if (isset($_GET['query'])){
+        $sql = "SELECT * FROM productlist WHERE UPPER(ProductName) like UPPER('%" . $_GET['query'] . "%');";
+      }
+      else if (isset($_POST['query'])){
         $sql = "SELECT * FROM productlist WHERE " . $_POST['query'];
       }
       else{

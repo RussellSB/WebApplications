@@ -63,9 +63,9 @@
 
 <!-- The right side of the header. Contains the search bar, button, and shopping button. -->
 <div id="rightside">
-    <form id="searcher">
-        <input id="searchbox" type="text" placeholder="Search for Products" onkeypress="handle(event)">
+    <form id="searcher" action="../page-structures/products.php" method="GET">
+        <input id="searchbox" type="text" name="query" placeholder="Search for Products" onkeypress="handle(event)">
+        <button id="search" type="submit"></button>
     </form>
-    <button id="search" onClick="search_func()"></button>
     <button id="shopping" onClick="toCart()"></button>
 </div>
