@@ -4,9 +4,51 @@
 
 <link rel="stylesheet" href="<?= $currPath . "stylesheets/sidebar.css"?>" />
 
+<?php 
+$QSTART = "ParentCategory=";
+$QSUBC  = "Category=";
+
+//sizeof = length of array
+
+$categories  = array("String", "Woodwind", "Brass", "Keyboard");
+$subcategories = array
+        (
+          array("Bass", "Harp", "Ukelele", "Guitar"),
+          array("Clarinets", "Bagpipes", "Panflutes"),
+          array("Trumpets", "Saxophone", "French Horn", "Mellophone"),
+          array("Piano", "Accordian", "Electric-Keyboard", "Synthesizer")
+        );
+?>
+
+
 <div id=sidebar>
-    <br/>
-    <br/>
-    <a class="sidelinks" href="<?= $currPath . "page-structures/products.php"?>" class="testing"> Products? </a>
-    <a class="sidelinks" href="<?= $currPath . "page-structures/aboutPage.php"?>" class="testing"> About Us? </a>
+
+  <form action="<?= $currPath . "page-structures/products.php"?>" method="post">
+
+    <?php
+      // Loops through the main categories, displaying a button for each
+      for($i = 0; $i < sizeof($categories); $i++){
+        ?>
+        <button type="submit" name="query"
+          value="<?= $QSTART . ($i+1) ?>"
+          class="sidelinks">
+          <p class="cat"> <?= $categories[$i] ?> </p>
+        </button>
+        <?
+
+        // Loops through the subcategories, displaying another button for each
+        for($j = 0; $j < sizeof($subcategories[$i]); $j++){
+          ?>
+          <button type="submit" name="query"
+          value="<?= $QSTART . ($i+1) . " and " . $QSUBC . ($j+1)?>"
+          class="sidelinks subcat">
+          <p class="subcat"> <?= $subcategories[$i][$j] ?> </p>
+          </button>
+          <?
+        }
+      }
+    ?>
+
+      
+  </form>
 </div>

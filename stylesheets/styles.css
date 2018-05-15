@@ -25,7 +25,6 @@ body{
 }
 
 #productbody{
-    display: grid;
     grid-template-areas: "header header"
                          "sidebar main"
                          "footer footer";
@@ -91,31 +90,56 @@ input{
 }
 
 div#contact{
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin: auto;
+    width: 80%;
 }
 
 /* Widths of user input fields */
-us1{
+
+#contact > h1{
+    grid-column: 1/11;
+    text-align: center;
+    grid-row: 1;
+}
+
+#contact > form{
+    grid-row: 2/6;
+    grid-column: 2/10;
+}
+
+#contact > form > label{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 30px);
+    grid-row-gap: 50px;
+}
+
+
+#us1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#us2{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#us3{
+    grid-row: 3/5;
+    grid-column: 1/6;
+}
+
+#us4{
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+#contact > form > label > div > .userinput{
     width: 100%;
-}
-
-us2{
-    width: 200%;
-}
-
-us3{
-    width: 225%;
-    height: 100px;
-}
-
-us4{
-    width: 100%;
-}
-
-#contact > form > label > .userinput{
+    height: 100%;
     box-shadow: 0 0 20px 3px black;
     background: rgba(40,0,0,1);
     border: 2px solid rgba(100,0,0,1);
@@ -126,9 +150,14 @@ us4{
     display: flex;
 }
 
-#contact > form > label > .userinput:focus{
+#contact > form > label > div > .userinput:focus{
     border: 2px solid gold;
     background: rgba(60,0,0,1);
+}
+
+#contact > form > label > input{
+    grid-row: 6/7;
+    grid-column: 1/2;
 }
 
 /* Concerned with about us */
@@ -318,13 +347,13 @@ BuyNow{
 
 /* Individual product */
 .pickedmain {
-    width: 90%;
+    width: 100;
     margin: auto;
 }
 
 .pickeditem {
     width: 90%;
-    margin: 130px 40px 40px 40px;
+    margin: 40px 40px 40px 40px;
     border-radius: 30px;
     padding: 20px;
     background: linear-gradient(#a7321f, #3d1111);
@@ -360,149 +389,4 @@ BuyNow{
     0%{ margin-top: 3px; }
     50%{ margin-top: -3px; }
     100%{ margin-top: 3px; }
-}
-
-/* @Media for smaller screens */
-@media screen and (max-width: 614px) {
-    .pagetitle{
-        font-size: 45px;
-        margin-top: 20px;
-    }
-
-    .aboutme{
-        margin-left: -40px;
-        margin-right: -40px;
-    }
-
-    .selfpic{
-        margin-right: -70px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    h1{
-        font-size: 30px;
-    }
-
-    /*Divs of the navbar*/
-    div#leftside{
-        align-items: center;
-        text-align: center;
-    }
-    div#rightside{
-        margin-top: -5px;
-    }
-
-    #searchbox:focus{
-        height: 35px;
-        width: 240px;
-    }
-
-    button#shopping{
-        margin-right: 20px;
-    }
-
-    .synewave{
-        margin-top: -1px;
-        font-size: 35px;
-        display: inline;
-    }
-
-    .synewave:after{
-        content: "\a";
-        white-space: pre;
-    }
-
-    #iconbox #syneicon{
-        display: none;
-    }
-
-    .menus{
-        margin-top: 0;
-        font-size: 17px;
-    }
-
-    #navbar{
-        position: relative;
-        height: 145px;
-    }
-
-    .carousel{
-        margin-top: 10px;
-        height: 250px;
-    }
-
-    .carousel .item{
-        height: 250px;
-    }
-
-    .carousel-inner > .item > img{
-        height: 250px;
-    }
-}
-
-@media screen and (max-width: 1040px) and (min-width: 614px){
-    h1{
-        font-size: 30px;
-    }
-
-    div#leftside{
-        align-items: center;
-        text-align: center;
-    }
-
-    div#rightside{
-        margin-top: 30px;
-    }
-
-    #searchbox:focus{
-        height: 35px;
-        width: 240px;
-    }
-
-    button#shopping{
-        margin-right: 20px;
-    }
-
-    .synewave{
-        margin-top: -1px;
-        font-size: 35px;
-        display: inline;
-    }
-
-    .synewave:after{
-        content: "\a";
-        white-space: pre;
-    }
-
-    #iconbox #syneicon{
-        display: none;
-    }
-
-    .menus{
-        margin-top: 0;
-        font-size: 17px;
-    }
-
-    #navbar{
-        position: relative;
-        height: 100px;
-    }
-
-    .carousel{
-        margin-top: 13px;
-        height: 250px;
-    }
-
-    .carousel .item{
-        height: 250px;
-    }
-
-    .carousel-inner > .item > img{
-        height: 250px;
-    }
 }
