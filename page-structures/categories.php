@@ -20,54 +20,59 @@
     </nav>
 </header>
 
+<?php $QSTART = "ParentCategory=";?>
+
 <main>
     <!--To be filled -->
     <h1 class="pagetitle">Pick your category!</h1>
     <div id="categories">
-      <a href="products.php?category=1">
-        <div class="category" id="sub1">
+    <form action="products.php" method="post">
+
+        <button type="submit" name="query"
+          value="<?php echo $QSTART . "1"?>"
+          class="category" id="sub1">
           <div class="img">
             <img src="../images/guitaricon.png" alt="string">
           </div>
           <p> string </p>
-        </div>
-      </a>
+        </button>
 
-      <a href="products.php?category=2">
-        <div class="category" id="sub2">
+        <button type="submit" name="query"
+          value="<?php echo $QSTART . "2"?>"
+          class="category" id="sub2">
           <div class="img">
             <img src="../images/woodwindicon.png" alt="woodwind">
           </div>
           <p> woodwind </p>
-        </div>
-      </a>
+        </button>
 
-      <a href="products.php?category=3">
-        <div class="category" id="sub3">
+        <button type="submit" name="query"
+          value="<?php echo $QSTART . "3"?>"
+          class="category" id="sub3">
           <div class="img">
             <img src="../images/brassicon.png" alt="brass">
           </div>
           <p> brass </p>
-        </div>
-      </a>
+        </button>
 
-      <a href="products.php?category=4">
-        <div class="category"id="sub4">
+        <button type="submit" name="query"
+          value="<?php echo $QSTART . "4"?>"
+          class="category" id="sub4">
           <div class="img">
             <img src="../images/keyboardicon.png" alt="keyboard">
           </div>
           <p> keyboard </p>
-        </div>
-      </a>
+        </button>
 
-      <a href="products.php">
-        <div class="category"id="sub5">
+        <button type="submit"
+          class="category" id="sub5">
           <div class="img">
             <img src="../images/all.png" alt="all">
           </div>
           <p> all products </p>
-        </div>
-      </a>
+        </button>
+
+    </form>
     </div>
 
     <!-- Breaks to leave space for footer-->

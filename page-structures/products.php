@@ -28,21 +28,15 @@
     <!-- TODO: Add support for category queries (category and subcategory) -->
 
     <?php
-      if (isset($_GET['category'])){
-        $category = $_GET['category'];
-      }
-      else{
-        $category = NULL;
-      }
-
-      require "../php-functions/db.php";
-
-      if($category != NULL){
-        $sql = "SELECT * FROM productlist WHERE ParentCategory=" . $category;
+      if (isset($_POST['query'])){
+        $sql = "SELECT * FROM productlist WHERE " . $_POST['query'];
       }
       else{
         $sql = "SELECT * FROM productlist";
       }
+
+      require "../php-functions/db.php";
+
       $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
       if (mysqli_num_rows($query)==0) { header("location:404.php"); }
@@ -70,7 +64,7 @@
           echo "<h3> $" . $r['Cost']  . "</h2>";
           $x = $r['ProductID'];
           echo "<form action=\"singleproduct.php\" method=\"post\">";
-          echo "<button name=\"prod\" type=\"submit\" value=" . $r['ProductID'] . "> Product Page </button>";
+          echo "<button name=\"prod\" type=\"submit\" value=" . $r['ProductID'] . "> Buy Now </button>";
           echo "</form>";
         //   echo "<button onClick='toProducts($x)' type='button' name='Product_Page' value=$x >" . "Product page" . "</button>";
           echo "</div>";

@@ -46,8 +46,14 @@ echo "<p> " . $r['Description'] . "</p>";
 echo "<p> Make: " . $r['Make'] . "</p>";
 echo "<p> No. in stock: " . $r['AmountInStock'] . "</p>";
 echo "<h3> $" . $r['Cost'] . "</h2>";
-echo "<select><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>";
-echo "<button type='button' name='addToCart' value=$x>" . "Add to Cart" . "</button>";
+echo "<form action=\"../php-functions/cart.php\" method=\"post\">";
+echo "<select name='quantity'>";
+for ($i = 1; $i <= (int) $r['AmountInStock'] and $i <= 30; $i++){
+    echo "<option value=\"$i\">$i</option>";
+}
+echo "</select>";
+echo "<button type='submit' name='cartobj' value=" . $r['ProductID'] . ">" . "Add to Cart" . "</button>";
+echo "</form>";
 
 echo "</div>";
 echo "</div>";
@@ -58,5 +64,5 @@ echo "</div>";
 <footer>
     <?php include "../includes/footer.php"?>
 </footer>
-
+<script src="../javascript/script.js"></script>
 </html>

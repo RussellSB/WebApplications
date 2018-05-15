@@ -13,13 +13,14 @@ function search_func(){
     if(address===""){
         alert("Nothing inputted");
     }else{
-        if(address.indexOf(">") >= 0 || address.indexOf("<") >= 0 || address.indexOf("%") >= 0){
-            alert("Invalid character in search, please do not use <, > or %");
+        if(address.indexOf(">") >= 0 || address.indexOf("<") >= 0 || address.indexOf("%") >= 0 ||
+            address.indexOf(";") >= 0 || address.indexOf("*") >= 0){
+            alert("Invalid character in search, please do not use <, >, ;, * or %");
         }else {
             var Query  = document.getElementById("searchbox").value;
             //write your specific code from here
             //todo call php function to search the database and return the top 5 results.
-            location.href = "../page-structures/searching.php?query=" + Query;
+            location.href = "../php-functions/searching.php?query=" + Query;
         }
     }
 }
@@ -30,10 +31,9 @@ function toCart(){
 }
 
 function goToProduct(productID){
-    location.href = "../page-structures/Product.php?pid=" + productID;
+    location.href = "../page-structures/singleproduct.php?pid=" + productID;
 }
 
 function toProducts(productID){
-    alert(productID);
-    location.href = "../page-structures/Product.php?pid=" + productID;
+    location.href = "../page-structures/singleproduct.php?pid=" + productID;
 }
