@@ -64,5 +64,5 @@ echo "</div>";
 <footer>
     <?php include "../includes/footer.php"?>
 </footer>
-
+<script src="../javascript/script.js"></script>
 </html>

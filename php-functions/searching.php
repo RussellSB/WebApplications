@@ -25,7 +25,7 @@
 $input = $_GET["query"];
 debug_to_console($input);
 require "../php-functions/db.php";
-$sql = "SELECT * FROM productlist WHERE ProductName like '" . $input . "%';";
+$sql = "SELECT * FROM productlist WHERE UPPER(ProductName) like UPPER('%" . $input . "%');";
 $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 // Retrieves all the rows returned by the SQL query
 $rows = array();
@@ -41,7 +41,6 @@ while ($r = mysqli_fetch_assoc($query)) {
     echo "<p> " . $r['ProductName'] . "</p>";
     echo "<h3> $" . $r['Cost'] . "</h2>";
     $x = $r['ProductID'];
-    echo "<select><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>";
     echo "<button onClick='toProducts($x)' type='button' name='Product_Page' value=$x >" . "Product page" . "</button>";
     echo "</div>";
 }
