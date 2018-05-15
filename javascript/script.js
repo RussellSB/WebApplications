@@ -19,7 +19,7 @@ function search_func(){
             var Query  = document.getElementById("searchbox").value;
             //write your specific code from here
             //todo call php function to search the database and return the top 5 results.
-            location.href = "../page-structures/searching.php?query=" + Query;
+            location.href = "../php-functions/searching.php?query=" + Query;
         }
     }
 }
@@ -30,10 +30,9 @@ function toCart(){
 }
 
 function goToProduct(productID){
-    location.href = "../page-structures/Product.php?pid=" + productID;
+    location.href = "../page-structures/singleproduct.php?pid=" + productID;
 }
 
 function toProducts(productID){
-    alert(productID);
-    location.href = "../page-structures/Product.php?pid=" + productID;
+    location.href = "../page-structures/singleproduct.php?pid=" + productID;
 }
