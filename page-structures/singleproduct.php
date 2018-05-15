@@ -12,8 +12,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/synewave_icon.png" />
 </head>
 
-<?php include "../includes/sidebar.php"?>
-
 <body>
 
 <header id="navbar">
