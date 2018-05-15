@@ -26,21 +26,15 @@
     <!-- TODO: Add support for category queries (category and subcategory) -->
 
     <?php
-      if (isset($_GET['category'])){
-        $category = $_GET['category'];
-      }
-      else{
-        $category = NULL;
-      }
-
-      require "../php-functions/db.php";
-
-      if($category != NULL){
-        $sql = "SELECT * FROM productlist WHERE ParentCategory=" . $category;
+      if (isset($_POST['query'])){
+        $sql = "SELECT * FROM productlist WHERE " . $_POST['query'];
       }
       else{
         $sql = "SELECT * FROM productlist";
       }
+
+      require "../php-functions/db.php";
+
       $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
       if (mysqli_num_rows($query)==0) { header("location:404.php"); }
