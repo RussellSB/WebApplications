@@ -13,8 +13,9 @@ function search_func(){
     if(address===""){
         alert("Nothing inputted");
     }else{
-        if(address.indexOf(">") >= 0 || address.indexOf("<") >= 0 || address.indexOf("%") >= 0){
-            alert("Invalid character in search, please do not use <, > or %");
+        if(address.indexOf(">") >= 0 || address.indexOf("<") >= 0 || address.indexOf("%") >= 0 ||
+            address.indexOf(";") >= 0 || address.indexOf("*") >= 0){
+            alert("Invalid character in search, please do not use <, >, ;, * or %");
         }else {
             var Query  = document.getElementById("searchbox").value;
             //write your specific code from here
