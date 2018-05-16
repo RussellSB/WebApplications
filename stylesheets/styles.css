@@ -385,16 +385,51 @@ BuyNow{
 }
 
 /* Cart page */
-form#cart {
+h1#carttitle{
+    grid-column: 1/7;
+}
+
+main#purchase{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
     margin: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+div#totalprice{
+    background: linear-gradient(rgba(150,10,1), rgba(150,60,10), rgba(150,80,10));
+    padding: 20px;
+    border-radius: 10px;
+    height: 160px;
+    box-shadow: 0 0 20px black;
+    grid-column: 5/6;
+    grid-row-start: 2;
+}
+
+div#totalprice > #label{
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+div#totalprice > #totalcost{
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+form#cart {
+    grid-row-start: 2;
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     width: 80%;
     grid-gap: 20px;
 }
 
 form#cart > .cartitem{
-    grid-column: 1/6;
+    grid-column: 1/7;
     width: 100%;
     display: grid;
     grid-template-columns: 200px 20px repeat(3,1fr);

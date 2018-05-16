@@ -36,9 +36,9 @@ session_start();
 <!-- TODO on the other hand check session state(Any products in car)-->
 <!-- TODO if they do exist output them -->
 
-<main>
+<main id="purchase">
 
-<h1 class="pagetitle"> Your Products </h1>
+<h1 id="carttitle" class="pagetitle"> Your Products </h1>
 <?php
 $listItems = array();
 $has_session = session_status() == PHP_SESSION_ACTIVE;
@@ -61,6 +61,21 @@ if(isset($_POST['cartobj'])){
     $_SESSION['Object' . $_POST['cartobj']] = $newobj;
 }
 
+$totalcost = 0;
+foreach ($_SESSION as &$tobuy){
+    $totalcost += (int) $tobuy['Cost'] * $tobuy['quantity'];
+}
+?>
+
+<div id="totalprice">
+    <p id="label"> Total Price : </p>
+    <p id="totalcost"> $<?php echo $totalcost ?> </p>
+    <form <?php /* action=<PURCHASE_PHP> method="post" */ ?> id="purchaseform">
+        <button <?php /* type="submit" name="purchase" value=$totalcost */ ?> > Finalize purchase </button>
+    </form>
+</div>
+
+<?php
 echo "<form action=\"singleproduct.php\" method=\"post\" id=\"cart\">";
 
 // Debug - Prints the contents of the session variable.
@@ -70,8 +85,8 @@ foreach ($_SESSION as &$tobuy):?>
         <img src=<?php echo "http://$_SERVER[HTTP_HOST]/WebApplications/productImages/" . $tobuy['PictureLocation']?>></img>
         <p id="name"> <?php echo $tobuy['ProductName'] ?> </p>
         <p id="make"> <?php echo $tobuy['Make'] ?> </p>
-        <p id="cost"> <?php echo $tobuy['Cost'] * $tobuy['quantity'] ?> </p>
-        <p id="quty"> <?php echo $tobuy['quantity'] ?> </p> 
+        <p id="cost"> <i>Cost : $<?php echo $tobuy['Cost'] * $tobuy['quantity'] ?> </i> </p>
+        <p id="quty"> Quantity : <?php echo $tobuy['quantity'] ?> </p> 
     </button>
 
 <?php endforeach; ?>
