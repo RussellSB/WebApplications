@@ -22,26 +22,7 @@
 
 <?php include "../includes/carousel.php"?>
 
-<main>
-
-    <!-- TODO: Replace searchbar functionality with PHP code -->
-
-    
-
-    <!-- TODO: Add content below the carousel -->
-
-    <!-- Breaks to leave space for footer-->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-</main>
-
-<footer>
+<footer id="mainfoot">
     <?php include "../includes/footer.php"?>
 </footer>
 

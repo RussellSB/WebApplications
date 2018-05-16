@@ -8,6 +8,12 @@ footer{
     height: 200px;
 }
 
+footer#mainfoot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 div#subMenus{
     text-align: center;
     vertical-align: middle;

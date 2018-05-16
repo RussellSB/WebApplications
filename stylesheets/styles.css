@@ -25,10 +25,9 @@ button, select{
 
 /* Grid setups */
 #frontpagebody{
-    grid-template-rows: 60px auto auto 150px;
+    grid-template-rows: 60px auto 100px;
     grid-template-areas: "header header"
                          "carousel carousel"
-                         "main main"
                          "footer footer";
     grid-gap: 0;
 }
