@@ -27,6 +27,7 @@ debug_to_console($input);
 require "../php-functions/db.php";
 $sql = "SELECT * FROM productlist WHERE UPPER(ProductName) like UPPER('%" . $input . "%');";
 $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
+
 // Retrieves all the rows returned by the SQL query
 $rows = array();
 $x = 0;
