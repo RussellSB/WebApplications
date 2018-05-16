@@ -29,6 +29,7 @@ body{
     grid-template-areas: "header header"
                          "sidebar main"
                          "footer footer";
+    grid-gap: 0;
 }
 
 #main{
