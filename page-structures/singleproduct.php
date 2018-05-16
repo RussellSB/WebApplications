@@ -46,7 +46,7 @@ echo "<p> " . $r['Description'] . "</p>";
 echo "<p> Make: " . $r['Make'] . "</p>";
 echo "<p> No. in stock: " . $r['AmountInStock'] . "</p>";
 echo "<h3> $" . $r['Cost'] . "</h2>";
-echo "<form action=\"../php-functions/cart.php\" method=\"post\">";
+echo "<form action=\"cart.php\" method=\"post\">";
 echo "<select name='quantity'>";
 for ($i = 1; $i <= (int) $r['AmountInStock'] and $i <= 30; $i++){
     echo "<option value=\"$i\">$i</option>";

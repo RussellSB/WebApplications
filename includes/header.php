@@ -24,7 +24,8 @@
 
     <?php elseif(basename($_SERVER['PHP_SELF'])=="products.php" or
         basename($_SERVER['PHP_SELF'])=="categories.php" or
-        basename($_SERVER['PHP_SELF'])=="singleproduct.php") : ?>
+        basename($_SERVER['PHP_SELF'])=="singleproduct.php" or
+        basename($_SERVER['PHP_SELF'])=="cart.php") : ?>
 
         <a href="<?= $currPath . "page-structures/frontPage.php"?>" class="navtext synewave">SyneWave</a>
         <a href="<?= $currPath . "page-structures/categories.php"?>"  class="navtext menus" id="activemenu">Products</a>
