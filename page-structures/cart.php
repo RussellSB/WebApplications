@@ -44,16 +44,20 @@ $has_session = session_status() == PHP_SESSION_ACTIVE;
 // Connects to database
 require "../php-functions/db.php";
 
-// Retrieves item to be added to cart from database
-$sql = "SELECT * FROM productlist WHERE ProductID=" . $_POST['cartobj'];
-$query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
+// If new object was passed.
+// For example, pressing the shopping button will skip this entire segment.
+if(isset($_POST['cartobj'])){
+    // Retrieves item to be added to cart from database
+    $sql = "SELECT * FROM productlist WHERE ProductID=" . $_POST['cartobj'];
+    $query = mysqli_query($con, $sql) or die(nl2br("\n Failed to execute query"));
 
-// Retrieves item - and appends quantity to it.
-$newobj = mysqli_fetch_assoc($query);
-$newobj['quantity'] = $_POST['quantity'];
+    // Retrieves item - and appends quantity to it.
+    $newobj = mysqli_fetch_assoc($query);
+    $newobj['quantity'] = $_POST['quantity'];
 
-// Appends item+quantity to the session global array.
-$_SESSION['Object' . $_POST['cartobj']] = $newobj;
+    // Appends item+quantity to the session global array.
+    $_SESSION['Object' . $_POST['cartobj']] = $newobj;
+}
 
 echo "<form action=\"singleproduct.php\" method=\"post\" id=\"cart\">";
 

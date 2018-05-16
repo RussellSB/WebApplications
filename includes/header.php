@@ -68,5 +68,5 @@
         <input id="searchbox" type="text" name="query" placeholder="Search for Products" onkeypress="handle(event)">
         <button id="search" type="submit"></button>
     </form>
-    <button id="shopping" onClick="toCart()"></button>
+    <button id="shopping" onClick="document.location.href='../page-structures/cart.php';"></button>
 </div>
