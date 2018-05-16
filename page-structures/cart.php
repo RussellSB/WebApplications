@@ -37,6 +37,8 @@ session_start();
 <!-- TODO if they do exist output them -->
 
 <main>
+
+<h1 class="pagetitle"> Your Products </h1>
 <?php
 $listItems = array();
 $has_session = session_status() == PHP_SESSION_ACTIVE;

@@ -13,6 +13,7 @@ body{
     grid-template-areas: "header header"
                          "main main "
                          "footer footer";
+    grid-gap: 50px;
 }
 
 /* Grid setups */
@@ -28,10 +29,6 @@ body{
     grid-template-areas: "header header"
                          "sidebar main"
                          "footer footer";
-}
-
-#cartbody{
-    grid-gap: 50px;
 }
 
 #main{
@@ -167,7 +164,6 @@ div#contact{
 /* Concerned with about us */
 
 .pagetitle{
-    margin-top: 100px;
     margin-bottom: 30px;
     font-size: 80px;
     text-align: center;
