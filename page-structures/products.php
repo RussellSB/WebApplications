@@ -45,9 +45,6 @@
       //if the query's results are 0
       if (mysqli_num_rows($query) == 0) {
 
-        $message = "We apologise but there were no matches found!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-
         echo "<div class=\"productNotFound\">";
         echo "<br>";
         echo "<br>";

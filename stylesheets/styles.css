@@ -396,13 +396,13 @@ div#contact{
     text-align: center;
     margin: 0 auto;
     background-image: url("https://i.ytimg.com/vi/VQLEZANsgBs/maxresdefault.jpg");
-    background-size: 100% 100%;
     position: relative;
+    background-position-x: -60px;
 
 }
 
 .productNotFound p{
-    font-weight: 500;
+    font-weight: 550;
 }
 
 /* Cart page */
