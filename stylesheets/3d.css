@@ -109,3 +109,15 @@ a{
   90%{color: white;}
   100%{color: red;}
 }
+
+/* Minor 404 */
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+main{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

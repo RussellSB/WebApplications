@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="/WebApplications/stylesheets/styles.css"/>
   </head>
 
-  <body>
+  <body id="404NOTEXIST">
     <header id="navbar">
         <nav>
             <?php include "../includes/header.php"?>
@@ -21,6 +21,7 @@
     <audio autoplay loop>
       <source src="/WebApplications/includes/404music.mp3">
     </audio>
+    <main>
     <p class="spinner" text="404!">404!</p>
     <p class="spinner" style="font-size: 60px;"
         text="This page does not exist unfortunately! :(">
@@ -35,6 +36,7 @@
     </div>
     <br>
     <br>
+    </main>
 
     <footer>
         <?php include "../includes/footer.php"?>
