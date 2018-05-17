@@ -5,7 +5,8 @@ footer{
     background: linear-gradient(rgba(100, 20, 20, 0.95),rgba(10, 0, 0, 1));
     box-shadow: 5px 5px 10px rgba(20,10,10,1);
     grid-area: footer;
-    height: 200px;
+    height: 100px;
+    display: grid;
 }
 
 footer#mainfoot{

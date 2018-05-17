@@ -1,7 +1,7 @@
 /* Stylings for carousel */
 
 .carousel {
-    --main-height: calc(100vh - 240px);
+    --main-height: calc(100vh - 140px);
     height: var(--main-height);
     grid-area: carousel;
 }
