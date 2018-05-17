@@ -45,8 +45,21 @@
       //if the query's results are 0
       if (mysqli_num_rows($query) == 0) {
 
-        $message = "llWe apologise but there were no matches found!";
+        $message = "We apologise but there were no matches found!";
         echo "<script type='text/javascript'>alert('$message');</script>";
+
+        echo "<div class=\"productNotFound\">";
+        echo "<br>";
+        echo "<br>";
+        echo "<h1>";
+        echo "Instrument not found!";
+        echo "</h1>";
+        echo "<br>";
+        echo "<p>";
+        echo "We apologise but we do not have that in our database as of yet yet. Searching through our database no matching instrument was found. Though don't FRET!<br>";
+        echo "You can contact us to request instruments for importing! Also feel free to navigate through our currently existing instruments through the categories bar.";
+        echo "</p>";
+        echo "</div>";
 
       }
       

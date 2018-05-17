@@ -350,10 +350,6 @@ div#contact{
   border-radius: 10px;
 }
 
-BuyNow{
-    color: linear-gradient(#8d2222, #3d1111);
-}
-
 /* Individual product */
 .pickedmain {
     width: 100;
@@ -391,6 +387,22 @@ BuyNow{
 #productname {
     font-weight: 400;
     font-size: 25px;
+}
+
+/* Styling for product not found main div*/
+.productNotFound{
+
+    height: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url("https://i.ytimg.com/vi/VQLEZANsgBs/maxresdefault.jpg");
+    background-size: 100% 100%;
+    position: relative;
+
+}
+
+.productNotFound p{
+    font-weight: 500;
 }
 
 /* Cart page */
