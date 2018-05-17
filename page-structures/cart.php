@@ -61,6 +61,10 @@ if(isset($_POST['cartobj'])){
     $_SESSION['Object' . $_POST['cartobj']] = $newobj;
 }
 
+if(isset($_POST['delete'])){
+    unset($_SESSION['Object' . $_POST['delete']]);
+}
+
 $totalcost = 0;
 foreach ($_SESSION as &$tobuy){
     $totalcost += (int) $tobuy['Cost'] * $tobuy['quantity'];
@@ -70,30 +74,44 @@ foreach ($_SESSION as &$tobuy){
 <div id="totalprice">
     <p id="label"> Total Price : </p>
     <p id="totalcost"> $<?php echo $totalcost ?> </p>
-    <form <?php /* action=<PURCHASE_PHP> method="post" */ ?> id="purchaseform">
-        <button <?php /* type="submit" name="purchase" value=$totalcost */ ?> > Finalize purchase </button>
+    <form action="purchase.php" method="post" id="purchaseform">
+        <button type="submit" name="purchase" value="<?php echo $totalcost?>"> Finalize purchase </button>
     </form>
 </div>
 
+
+<div id="cartdiv">
 <?php
-echo "<form action=\"singleproduct.php\" method=\"post\" id=\"cart\">";
 
 // Debug - Prints the contents of the session variable.
 foreach ($_SESSION as &$tobuy):?>
-
+    <form action="singleproduct.php" method="post" class="cart">
     <button type="submit" name="prod" value="<?php echo $tobuy['ProductID'] ?>" class="cartitem">
         <img src=<?php echo "http://$_SERVER[HTTP_HOST]/WebApplications/productImages/" . $tobuy['PictureLocation']?>></img>
         <p id="name"> <?php echo $tobuy['ProductName'] ?> </p>
         <p id="make"> <?php echo $tobuy['Make'] ?> </p>
         <p id="cost"> <i>Cost : $<?php echo $tobuy['Cost'] * $tobuy['quantity'] ?> </i> </p>
-        <p id="quty"> Quantity : <?php echo $tobuy['quantity'] ?> </p> 
+        <p id="quty"> Quantity : <?php echo $tobuy['quantity'] ?> </p>
     </button>
+    </form>
+
+    <form action="cart.php" method="post" class="delete">
+        <button
+            type=submit
+            name="delete"
+            value=<?php echo $tobuy['ProductID'] ?>>
+            Remove item </button>
+        </button>
+    </form>
 
 <?php endforeach; ?>
-
-</form>
+</div>
 
 </main>
+
+<footer>
+    <?php include "../includes/footer.php"?>
+</footer>
 
 </body>
 
