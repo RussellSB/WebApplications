@@ -392,18 +392,18 @@ div#contact{
 
 /* Styling for product not found main div*/
 .productNotFound{
-
-    height: 1200px;
+    height: 100%;
     text-align: center;
     margin: 0 auto;
-    background-image: url("https://i.ytimg.com/vi/VQLEZANsgBs/maxresdefault.jpg");
+    background-image: url("../images/ewnomusic.jpg");
+    background-size: cover;
     position: relative;
     background-position-x: -60px;
-
 }
 
 .productNotFound p{
-    font-weight: 550;
+    font-weight: 500;
+    text-shadow: 0 0 10px black;
 }
 
 /* Cart page */
