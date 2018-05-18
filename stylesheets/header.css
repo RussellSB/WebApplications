@@ -1,10 +1,23 @@
 /*Stylings for the header*/
 
 header{
+    min-width: 450px;
     width: 100%;
     top: 0px;
-    min-width: 1166px;
+    /* min-width: 1166px; */
     position: sticky;
+}
+
+ul{
+    display: inline-table;
+}
+
+li{
+    display: table-cell;
+}
+
+ul#leftside{
+    margin-left: -30px;
 }
 
 /*Identities*/
@@ -17,6 +30,27 @@ header{
     background: linear-gradient(rgba(30, 0, 0, 1), rgba(120, 20, 20, 0.95));
     box-shadow: 5px 5px 10px rgba(40,10,10,1);
     grid-area: header;
+}
+
+#hmbg{
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    right: 0;
+    padding: 0 15px;
+    border: 5px solid rgb(126, 18, 18);
+    box-shadow: 0 0 15px black;
+    outline: none;
+    background: linear-gradient(rgb(200,0,0,1), rgb(150,50,0,1));
+    color: #fff;
+    cursor: pointer;
+    transition: linear 200ms;
+    font-size: 30px;
+}
+
+#hmbg:hover{
+    border: 5px solid rgb(255, 165, 165);
+    font-size: 35px;
 }
 
 #syneicon{
@@ -32,11 +66,11 @@ div#iconbox{
     float: left;
 }
 
-div#leftside{
+ul#leftside{
     float: left;
 }
 
-div#rightside{
+ul#rightside{
     float: right;
 }
 
@@ -59,6 +93,55 @@ div#rightside{
     vertical-align: bottom;
     margin-top: 19px;
     transition: 2s;
+}
+
+
+
+ul.hidden-links{
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.burgermenu{
+    font-size: 18px !important;
+    font-family: Raleway;
+}
+
+.hidden-links > li{
+    display: block;
+    border-top: 1px solid #f57c00;
+    background: linear-gradient(rgba(80,0,0,1), black);
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+.hidden-links > li > a{
+    font-size: 12px;
+}
+
+.modify{
+    margin-top: 0;
+}
+
+.modify:focus{
+    width: 250px;
+}
+
+.marginadd{
+    width: 130px;
+    height: 60px;
+}
+
+.marginadd > #shopping{
+    width: 60px;
+    height: 60px;
+}
+
+.marginadd > #shopping:active{
+    width: 35px;
+    height: 35px;
+    margin: 15px 5px 5px 15px;
 }
 
 #searchbox:focus{
@@ -96,6 +179,7 @@ button#shopping{
     height: 35px;
     border: 2px solid rgba(200,100,20,0.8);
     margin-right: 12px;
+    margin-left:5px;
     transition: 50ms;
 }
 
@@ -103,7 +187,7 @@ button#shopping:active{
     width: 25px;
     height: 25px;
     border: 2px solid rgba(255,130,20,1);
-    margin: 5px 15px 5px 7px;
+    margin: 5px 18px 5px 9px;
 }
 
 /*Classes*/
