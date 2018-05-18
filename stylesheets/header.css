@@ -99,6 +99,7 @@ ul#rightside{
 
 ul.hidden-links{
     position: absolute;
+    display: block;
     right: 0;
     top: 100%;
 }
@@ -109,7 +110,6 @@ ul.hidden-links{
 }
 
 .hidden-links > li{
-    display: block;
     border-top: 1px solid #f57c00;
     background: linear-gradient(rgba(80,0,0,1), black);
     border: 2px solid black;

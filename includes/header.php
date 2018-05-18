@@ -56,6 +56,13 @@
       <li><a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a></li>
       <li><a href="<?= $currPath . "page-structures/404.php"?>"       style="text-shadow:0 0 2px white;" class="navtext menus" id="activemenu">404!</a></li>
 
+      <?php elseif(basename($_SERVER['PHP_SELF'])=="purchase.php") : ?>
+
+        <li><a href="<?= $currPath . "page-structures/frontPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext synewave">SyneWave</a></li>
+        <li><a href="<?= $currPath . "page-structures/categories.php"?>"  style="text-shadow:0 0 2px white;" class="navtext menus">Products</a></li>
+        <li><a href="<?= $currPath . "page-structures/aboutPage.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">About Us</a></li>
+        <li><a href="<?= $currPath . "page-structures/contactUs.php"?>" style="text-shadow:0 0 2px white;" class="navtext menus">Contact Us</a></li>
+
     <?php endif; ?>
 
 </ul>
