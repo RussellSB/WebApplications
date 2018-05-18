@@ -87,11 +87,13 @@ foreach ($_SESSION as &$tobuy){
 foreach ($_SESSION as &$tobuy):?>
     <form action="singleproduct.php" method="post" class="cart">
     <button type="submit" name="prod" value="<?php echo $tobuy['ProductID'] ?>" class="cartitem">
+        <span>
         <img src=<?php echo "http://$_SERVER[HTTP_HOST]/WebApplications/productImages/" . $tobuy['PictureLocation']?>></img>
         <p id="name"> <?php echo $tobuy['ProductName'] ?> </p>
         <p id="make"> <?php echo $tobuy['Make'] ?> </p>
         <p id="cost"> <i>Cost : $<?php echo $tobuy['Cost'] * $tobuy['quantity'] ?> </i> </p>
         <p id="quty"> Quantity : <?php echo $tobuy['quantity'] ?> </p>
+        </span>
     </button>
     </form>
 
