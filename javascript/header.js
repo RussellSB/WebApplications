@@ -6,9 +6,9 @@ var $iconbox = $('div#iconbox');
 var $hlinks = $('#navbar .hidden-links');
 
 var breaks = [];
-var linkSpace = ($iconbox.width() + $lvlinks.width() + $rvlinks.width() + 100);
+var linkSpace = ($iconbox.width() + $lvlinks.width() + $rvlinks.width() + 50);
 
-console.log("SCRIPT LOADED");
+// console.log("SCRIPT LOADED");
 
 function updateNav() {
     // Sets avaliable space to width of navigation bar, OR width of nav - width of button - 30.

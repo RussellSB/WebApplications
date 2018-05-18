@@ -217,6 +217,16 @@ div#contact{
     text-align: center;
 }
 
+#categories > form{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-rows: repeat(auto-fill, 200px);
+    justify-content: center;
+}
+
 .category {
   background: linear-gradient(#8d2222, #3d1111);
   border: 1px solid white;
@@ -227,7 +237,6 @@ div#contact{
   line-height: 150px;
   padding: 20px;
   display: inline-block;
-  margin: 40px 40px 40px 40px;
   vertical-align: middle;
   transition: 300ms;
 }
@@ -542,4 +551,14 @@ form.cart > .cartitem > p#quty{
     0%{ margin-top: 3px; }
     50%{ margin-top: -3px; }
     100%{ margin-top: 3px; }
+}
+
+@media only screen and (max-width: 800px){
+    .person {
+        grid-template-areas: "title"
+                             "image"
+                             "description";
+        justify-items: center;
+        grid-row-gap:30px;
+    }
 }
