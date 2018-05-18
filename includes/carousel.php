@@ -25,7 +25,7 @@
             <img class="second-slide" src="../images/BANNERUkulele1.jpeg" alt="not here :c">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>The Cordoba 15M</h1>
+                    <h1>The Cordoba 15TM</h1>
                     <p>Now on sale!</p>
                     <p><a class="btn btn-lg btn-primary" href="#" role="button">Purchase!</a></p>
                 </div>
