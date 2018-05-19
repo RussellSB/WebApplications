@@ -11,7 +11,7 @@ $order;
 
 foreach($_SESSION as &$tobuy):
         
-    $order .= $tobuy['ProductID']  . $tobuy['Make'] . $tobuy['ProductName'] . $tobuy['Cost'] . $tobuy['quantity'] . "\r\n";
+    $order .= $tobuy['ProductID']  . $tobuy['Make'] . wordwrap($tobuy['ProductName'], 30) . $tobuy['Cost'] . $tobuy['quantity'] . "\r\n";
         
 endforeach;
     
