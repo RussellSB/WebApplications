@@ -491,7 +491,12 @@ h1#carttitle{
     grid-column: 1/7;
 }
 
-main#purchase{
+div#nothingInCart{
+    grid-column: 1/7;
+    grid-row: 2;
+}
+
+main#purchase1{
     display: grid;
     width: 80%;
     margin: auto;

@@ -36,7 +36,7 @@ session_start();
 <!-- TODO on the other hand check session state(Any products in car)-->
 <!-- TODO if they do exist output them -->
 
-<main id="purchase">
+<main id="purchase1">
 
 <h1 id="carttitle" class="pagetitle"> Your Products </h1>
 <?php
@@ -67,20 +67,24 @@ if(isset($_POST['delete'])){
 
 $totalcost = 0;
 foreach ($_SESSION as &$tobuy){
-    $totalcost += (int) $tobuy['Cost'] * $tobuy['quantity'];
+    $totalcost += (float) $tobuy['Cost'] * $tobuy['quantity'];
 }
 ?>
 
 <?php
 if($totalcost == 0){ //if no iterms in shopping cart
 
-    
+    echo "<div id=\"nothingInCart\">";
+    echo "<h2>Nothing in cart please add products!</h2>";
+    echo "</div>";    
 
 }else{ //if items in shopping cart
 
     echo "<div id=\"totalprice\">";
     echo "<p id=\"label\"> Total Price : </p>";
-    echo "<p id=\"totalcost\"> $<?php echo $totalcost ?> </p>";
+    echo "<p id=\"totalcost\">€";
+    echo number_format((float)$totalcost, 2, '.', '');
+    echo "</p>";
     echo "<form action=\"purchase.php\" method=\"post\" id=\"purchaseform\">";
     echo    "<button type=\"submit\" name=\"purchase\" value=\"<?php echo $totalcost?>\"> Finalize purchase </button>";
     echo "</form>";
