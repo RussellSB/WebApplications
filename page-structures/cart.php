@@ -87,7 +87,9 @@ if($totalcost == 0){ //if no iterms in shopping cart
     echo number_format((float)$totalcost, 2, '.', '');
     echo "</p>";
     echo "<form action=\"purchase.php\" method=\"post\" id=\"purchaseform\">";
-    echo    "<button type=\"submit\" name=\"purchase\" value=\"<?php echo $totalcost?>\"> Finalize purchase </button>";
+    echo "<button type=\"submit\" name=\"purchase\" value=\"";
+    echo $totalcost;
+    echo "\"> Finalize purchase </button>";
     echo "</form>";
     echo "</div>";
 
