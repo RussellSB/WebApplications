@@ -106,11 +106,13 @@ div#purchase{
     grid-row: 1;
 }
 
-#purchase > p{
+#purchase > h4{
     grid-column: 2/10;
     text-align: center;
     grid-row: 2;
-    
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: white;
 }
 
 #purchase > form{
