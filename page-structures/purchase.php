@@ -35,15 +35,14 @@ else{
 
     <main id="purchasemain">
         
-    <div id="contact">
-        <h1 class="pagetitle">Talk to us!</h1>
+    <div id="purchase">
+    <h1 class="pagetitle">Almost there!</h1>
+    <p>We're soon there! Please input the required information to confirm your purchase order! An email will then be sent to you concerning your purchase order.</p>
         <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">
             <label>
-                <div id="us1">Full name: <input class="userinput" type="text" name="fullName" required><br><br></div>
-                <div id="us2">Subject: <input class="userinput" type="text" name="subject" required><br><br></div>
-                <div id="us3">Main text: <textarea class="userinput" name="mainText" required></textarea><br><br></div>
-                <div id="us4">Email: <input class="userinput" type="email" name="email" required><br><br></div>
-                <br>
+                <div id="nam1">Full name: <input class="userinput"type="text" name="fullName" required></div>
+                <div id="em2">Email: <input class="userinput" type="email" name="email" required></div>
+
                 <input type="submit" style="font-weight: 800">
             </label>
         </form>

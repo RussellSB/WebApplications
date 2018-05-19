@@ -90,6 +90,45 @@ input{
     color: rgba(50,50,50,1);
 }
 
+/* Concerned with purchase */
+div#purchase{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: auto;
+    width: 80%;
+}
+
+#purchase > h1{
+    grid-column: 1/11;
+    text-align: center;
+    grid-row: 1;
+}
+
+#purchase > p{
+    grid-column: 2/10;
+    text-align: center;
+    grid-row: 2;
+    
+}
+
+#purchase > form{
+
+    grid-row: 3/6;
+    grid-column: 2/10;
+
+}
+
+#nam1{
+    grid-row: 3;
+    grid-column: 2/6;
+}
+
+#em2{
+    grid-row: 4;
+    grid-column: 2/6;
+}
+
 /* Concerned with contact us */
 
 #pagetext{
@@ -146,7 +185,7 @@ div#contact{
     grid-column: 1/2;
 }
 
-#contact > form > label > div > .userinput{
+.userinput{
     width: 100%;
     height: 100%;
     box-shadow: 0 0 20px 3px black;
@@ -158,8 +197,7 @@ div#contact{
     transition: 400ms;
     display: flex;
 }
-
-#contact > form > label > div > .userinput:focus{
+.userinput:focus{
     border: 2px solid gold;
     background: rgba(60,0,0,1);
 }
