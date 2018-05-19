@@ -38,7 +38,7 @@ else{
     <div id="purchase">
     <h1 class="pagetitle">Almost there!</h1>
     <h4>Please enter your personal details below to finalize purchase!</h4>
-        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">
+        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/purchasing.php">
             <label>
                 <div id="nam1">Full name: <input class="userinput"type="text" name="fullName" required></div>
                 <div id="em2">Email: <input class="userinput" type="email" name="email" required></div>
