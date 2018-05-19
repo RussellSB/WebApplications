@@ -90,7 +90,7 @@ input{
     color: rgba(50,50,50,1);
 }
 
-/* Concerned with purchase */
+/* Concerned with purchase.php page*/
 div#purchase{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -162,6 +162,7 @@ div#contact{
     grid-template-columns: repeat(10, 1fr);
     margin: auto;
     width: 80%;
+    margin-bottom: -20px;
 }
 
 /* Widths of user input fields */
@@ -273,6 +274,7 @@ div#contact{
     margin-right: auto;
     padding: 100px;
     text-align: center;
+    margin-bottom: 90px;
 }
 
 #categories > form{
@@ -494,6 +496,9 @@ h1#carttitle{
 div#nothingInCart{
     grid-column: 2/6;
     grid-row: 2/3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    
 }
 
 div#nothingInCart > h2{
@@ -504,12 +509,14 @@ div#nothingInCart > h3{
     color: white;
 }
 
+/*TODO: make this not look borken when window is compressed in width*/
 main#purchase1{
     display: grid;
     width: 80%;
     margin: auto;
     grid-gap: 20px;
     grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 170px;
 }
 
 div#totalprice{
