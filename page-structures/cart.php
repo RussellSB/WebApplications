@@ -71,14 +71,23 @@ foreach ($_SESSION as &$tobuy){
 }
 ?>
 
-<div id="totalprice">
-    <p id="label"> Total Price : </p>
-    <p id="totalcost"> $<?php echo $totalcost ?> </p>
-    <form action="purchase.php" method="post" id="purchaseform">
-        <button type="submit" name="purchase" value="<?php echo $totalcost?>"> Finalize purchase </button>
-    </form>
-</div>
+<?php
+if($totalcost == 0){ //if no iterms in shopping cart
 
+    
+
+}else{ //if items in shopping cart
+
+    echo "<div id=\"totalprice\">";
+    echo "<p id=\"label\"> Total Price : </p>";
+    echo "<p id=\"totalcost\"> $<?php echo $totalcost ?> </p>";
+    echo "<form action=\"purchase.php\" method=\"post\" id=\"purchaseform\">";
+    echo    "<button type=\"submit\" name=\"purchase\" value=\"<?php echo $totalcost?>\"> Finalize purchase </button>";
+    echo "</form>";
+    echo "</div>";
+
+}
+?>
 
 <div id="cartdiv">
 <?php
