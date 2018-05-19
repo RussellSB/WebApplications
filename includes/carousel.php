@@ -16,8 +16,10 @@
                 <div class="carousel-caption">
                     <h1>The New Yamaha SA2200</h1>
                     <p>Early 60% Off Deal</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Purchase!</a></p>
-                </div>
+                    <form action="singleproduct.php" method="post">
+                        <button value=2 name="prod" class="btn btn-lg btn-primary">Check it out!</button>
+                    </form>
+                    </div>
             </div>
         </div>
 
@@ -27,8 +29,10 @@
                 <div class="carousel-caption">
                     <h1>The Cordoba 15TM</h1>
                     <p>Now on sale!</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Purchase!</a></p>
-                </div>
+                    <form action="singleproduct.php" method="post" >
+                        <button value=4 name="prod" class="btn btn-lg btn-primary" >Check it out!</button>
+                    </form>
+                    </div>
             </div>
         </div>
 
@@ -38,7 +42,9 @@
                 <div class="carousel-caption">
                     <h1>The Kala Makala Waterman</h1>
                     <p>Water-proof ukulele!</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Check it out!</a></p>
+                    <form action="singleproduct.php" method="post">
+                        <button value=12 name="prod" class="btn btn-lg btn-primary">Check it out!</button>
+                    </form>
                 </div>
             </div>
         </div>
