@@ -31,7 +31,7 @@
                 <div id="us3">Main text: <textarea class="userinput" name="mainText" required></textarea><br><br></div>
                 <div id="us4">Email: <input class="userinput" type="email" name="email" required><br><br></div>
                 <br>
-                <input type="submit" style="font-weight: 800">
+                <input type="submit" style="font-weight: 800" value="Send Email">
             </label>
         </form>
     </div>

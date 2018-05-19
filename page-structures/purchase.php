@@ -43,7 +43,7 @@ else{
                 <div id="em2">Email: <input class="userinput" type="email" name="email" required></div>
                 <div id="add">Home Address: <input class="userinput" type="text" name="homeAddress" required></div>
 
-                <input type="submit" style="font-weight: 800">
+                <input type="submit" style="font-weight: 800" value="Purchase Order">
             </label>
         </form>
     </div>
