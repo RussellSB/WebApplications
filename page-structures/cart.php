@@ -75,7 +75,8 @@ foreach ($_SESSION as &$tobuy){
 if($totalcost == 0){ //if no iterms in shopping cart
 
     echo "<div id=\"nothingInCart\">";
-    echo "<h2>Nothing in cart please add products!</h2>";
+    echo "<h2>No Instruments Found in Cart!</h2>";
+    echo "<h3>Feel free to search for your desired instrument or browse through our selection of offers!</h3>";
     echo "</div>";    
 
 }else{ //if items in shopping cart
