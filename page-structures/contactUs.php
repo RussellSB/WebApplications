@@ -21,6 +21,19 @@
 </header>
 
 <main>
+    <?php
+    session_start();
+    if (isset($_SESSION['ERROR']))
+    {
+        if($_SESSION['ERROR'] == "TRUE"){
+            echo "<script>alert('You can not use <, >, %, ; or *')</script>";
+            $_SESSION['ERROR'] = "FALSE";
+        }
+    }else{
+        $_SESSION['ERROR'] = "FALSE";
+    }
+    ?>
+
     <div id="contact">
         <h1 class="pagetitle">Talk to us!</h1>
         <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">

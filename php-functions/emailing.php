@@ -9,6 +9,8 @@
  */
 session_start();
 
+
+
 if(checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullName']) &&
     checkForInvalidChars($_POST['mainText']) && checkForInvalidChars($_POST['subject'])) {
     $to = "synewaveltd@gmail.com";
@@ -21,6 +23,7 @@ if(checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullNam
     header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 }else{
     echo "<script>alert('Please do not use >, <, %, $, ; or *')";
+    $_SESSION["ERROR"] = "TRUE";
     header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/contactUs.php"); /*redirects to main page*/
 }
 exit();
