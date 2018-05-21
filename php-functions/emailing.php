@@ -14,7 +14,7 @@ $headers = 'From: synewavebot@gmail.com' . "\r\n" .
 $fullText = "Complaint from : " . $_POST['email'] . "\r\n" . "Name : " .
     $_POST['fullName'] . "\r\n\n" . $_POST['mainText'] . "\r\n";
 mail($to, $_POST['subject'], $fullText, $headers);
-header("Location: http://127.0.0.1:8080/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
+header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 exit();
 ?>
 </body>
