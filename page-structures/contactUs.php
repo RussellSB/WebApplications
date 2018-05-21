@@ -21,7 +21,6 @@
 </header>
 
 <main>
-
     <div id="contact">
         <h1 class="pagetitle">Talk to us!</h1>
         <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">
