@@ -26,7 +26,7 @@ $fullText = "Purchase from : " . $_POST['email'] .
     "\r\n\n" . $order . "\r\n";
 ;
 mail($to, "Purchase Order", $fullText, $headers);
-header("Location: http://127.0.0.1:8080/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
+header("Location: http://localhost:8080/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 exit();
 ?>
 </body>
