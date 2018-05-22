@@ -37,7 +37,7 @@
 
     <div id="contact">
         <h1 class="pagetitle">Talk to us!</h1>
-        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/emailing.php">
+        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/contacting.php">
             <label>
                 <div id="us1">Full name: <input class="userinput" type="text" name="fullName" required><br><br></div>
                 <div id="us2">Subject: <input class="userinput" type="text" name="subject" required><br><br></div>
