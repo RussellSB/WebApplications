@@ -22,9 +22,8 @@ if(checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullNam
     mail($to, $_POST['subject'], $fullText, $headers);
     header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 }else{
-    echo "<script>alert('Please do not use >, <, %, $, ; or *')";
     $_SESSION["ERROR"] = "TRUE";
-    header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/contactUs.php"); /*redirects to main page*/
+    header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/contactUs.php"); /*redirects to the contact us page*/
 }
 exit();
 
