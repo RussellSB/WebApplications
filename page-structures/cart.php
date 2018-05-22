@@ -6,6 +6,7 @@
  * Time: 11:50
  */
 session_start();
+$_SESSION['CART'] = array();
 
 ?>
 <!DOCTYPE html>
@@ -58,21 +59,20 @@ if(isset($_POST['cartobj'])){
     $newobj['quantity'] = $_POST['quantity'];
 
     // Appends item+quantity to the session global array.
-    $_SESSION['Object' . $_POST['cartobj']] = $newobj;
+    $_SESSION['CART']['Object' . $_POST['cartobj']] = $newobj;
 }
-
 if(isset($_POST['delete'])){
-    unset($_SESSION['Object' . $_POST['delete']]);
+    unset($_SESSION['CART']['Object' . $_POST['delete']]);
 }
 
 $totalcost = 0;
-foreach ($_SESSION as &$tobuy){
+foreach ($_SESSION['CART'] as $tobuy){
     $totalcost += (float) $tobuy['Cost'] * $tobuy['quantity'];
 }
 ?>
 
 <?php
-if($totalcost == 0){ //if no iterms in shopping cart
+if($totalcost == 0){ //if no items in shopping cart
 
     echo "<div id=\"nothingInCart\">";
     echo "<h2>No Instruments Found in Cart!</h2>";
@@ -100,7 +100,7 @@ if($totalcost == 0){ //if no iterms in shopping cart
 <?php
 
 // Debug - Prints the contents of the session variable.
-foreach ($_SESSION as &$tobuy):?>
+foreach ($_SESSION['CART'] as $tobuy):?>
     <form action="singleproduct.php" method="post" class="cart">
     <button type="submit" name="prod" value="<?php echo $tobuy['ProductID'] ?>" class="cartitem">
         <span>

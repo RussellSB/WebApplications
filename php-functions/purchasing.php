@@ -12,7 +12,7 @@ $headers = 'From: synewavepurchases@gmail.com' . "\r\n" .
 $order="";
 
 //concatenates to order string variable
-foreach($_SESSION as &$tobuy){
+foreach($_SESSION['CART'] as &$tobuy){
         
     $order .= $tobuy['ProductID']  . ", " . $tobuy['Make'] . ", " . $tobuy['ProductName'] . ", " . $tobuy['Cost'] . ", " . $tobuy['quantity'] . ";" . "\r\n";
         
