@@ -6,7 +6,10 @@
  * Time: 11:50
  */
 session_start();
-$_SESSION['CART'] = array();
+
+if(!isset($_SESSION['CART'])){
+    $_SESSION['CART'] = array();
+}
 
 ?>
 <!DOCTYPE html>
