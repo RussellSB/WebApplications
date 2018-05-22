@@ -9,7 +9,7 @@
  */
 session_start();
 
-
+require ('InputParsing.php');
 
 if(checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullName']) &&
     checkForInvalidChars($_POST['mainText']) && checkForInvalidChars($_POST['subject'])) {
@@ -27,21 +27,6 @@ if(checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullNam
 }
 exit();
 
-
-function checkForInvalidChars($toBeChecked)
-{
-    $toBeChecked = "x".$toBeChecked;
-    if (strpos($toBeChecked, '%') !== false ||
-        strpos($toBeChecked, '>') !== false ||
-        strpos($toBeChecked, '<') !== false ||
-        strpos($toBeChecked, '$') !== false ||
-        strpos($toBeChecked, ';') !== false ||
-        strpos($toBeChecked, "*") !== false ){
-        return false;
-    } else {
-        return true;
-    }
-}
 
 ?>
 </body>
