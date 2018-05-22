@@ -7,7 +7,7 @@ if(isset($_POST['purchase'])){
 }
 else{
     echo '<p> No items in cart found - redirecting to home page </p>';
-    header("Refresh: 5;:http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php");
+    header("http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php");
 }
 
 ?>
@@ -38,7 +38,7 @@ else{
     <div id="purchase">
     <h1 class="pagetitle">Almost there!</h1>
     <h4>Please enter your personal details below to finalize purchase!</h4>
-        <form method="POST" action="http://127.0.0.1:8080/WebApplications/php-functions/purchasing.php">
+        <form method="post" action="http://localhost:8080/WebApplications/php-functions/purchasing.php">
             <label>
                 <div id="nam1">Full name: <input class="userinput"type="text" name="fullName" required></div>
                 <div id="em2">Email: <input class="userinput" type="email" name="email" required></div>

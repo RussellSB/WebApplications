@@ -25,6 +25,13 @@ $fullText = "Purchase from : " . $_POST['email'] .
     "\r\n" . "The Ordered Products are displayed in the order; ProductID, Make, ProductName, Cost(€), Quantity" . 
     "\r\n\n" . $order . "\r\n";
 ;
+
+session_regenerate_id(true);
+session_unset();
+session_destroy();
+session_write_close();
+setcookie(session_name(),'',0,'/');
+
 mail($to, "Purchase Order", $fullText, $headers);
 header("Location: http://localhost:8080/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 exit();
