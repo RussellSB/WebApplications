@@ -19,7 +19,7 @@
         </nav>
     </header>
     <audio autoplay loop>
-      <source src="/WebApplications/includes/404music.mp3">
+      <source src="../includes/404music.mp3">
     </audio>
     <main>
     <p class="spinner" text="404!">404!</p>

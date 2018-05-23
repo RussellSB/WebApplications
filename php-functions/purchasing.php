@@ -6,8 +6,8 @@ session_start();
 
 require ('InputParsing.php');
 
-if (checkForInvalidChars($_SESSION['email']) && checkForInvalidChars($_SESSION['fullName'])
-    && checkForInvalidChars($_SESSION['homeAddress'])) {
+if (checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullName'])
+    && checkForInvalidChars($_POST['homeAddress'])) {
     $to = "synewaveltd@gmail.com";
     $headers = 'From: synewavepurchases@gmail.com' . "\r\n" .
         'Reply-To: ' . $_POST['email'] . "\r\n" .
@@ -35,10 +35,10 @@ if (checkForInvalidChars($_SESSION['email']) && checkForInvalidChars($_SESSION['
     setcookie(session_name(), '', 0, '/');
 
     mail($to, "Purchase Order", $fullText, $headers);
-    header("Location: http://localhost:8080/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
+    header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 } else {
     $_SESSION['ERROR'] = "TRUE";
-    header("Location: http://localhost:8080/WebApplications/page-structures/purchase.php");
+    header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/purchase.php");
 }
 exit();
 ?>

@@ -4,10 +4,9 @@
  * User: seanp
  * Date: 22/05/2018
  * Time: 18:55
- * @param $toBeChecked
- * @return bool
+ * param $toBeChecked
+ * return bool
  */
-
 function checkForInvalidChars($toBeChecked)
 {
     $toBeChecked = "x".$toBeChecked;

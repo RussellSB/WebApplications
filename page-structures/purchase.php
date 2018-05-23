@@ -2,12 +2,14 @@
 
 session_start();
 
+/*
 if (isset($_POST['purchase'])) {
     $totalcost = $_POST['purchase'];
 } else {
     echo '<p> No items in cart found - redirecting to home page </p>';
     header("http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php");
 }
+*/
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +34,7 @@ if (isset($_POST['purchase'])) {
 </header>
 
 <main id="purchasemain">
+
     <?php
     if (isset($_SESSION['ERROR']))
     {
@@ -43,8 +46,7 @@ if (isset($_POST['purchase'])) {
         $_SESSION['ERROR'] = "FALSE";
     }
     ?>
-}
-    ?>
+
     <div id="purchase">
         <h1 class="pagetitle">Almost there!</h1>
         <h4>Please enter your personal details below to finalize purchase!</h4>
