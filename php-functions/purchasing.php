@@ -37,8 +37,10 @@ if (checkForInvalidChars($_POST['email']) && checkForInvalidChars($_POST['fullNa
     mail($to, "Purchase Order", $fullText, $headers);
     header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/frontPage.php"); /*redirects to main page*/
 } else {
-    $_SESSION['ERROR'] = "TRUE";
-    header("Location: http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/purchase.php");
+    echo "<script>
+            alert('Input not valid! Injection strings \<script\>, \</script\>, \<?php, \?>, echo or \$ were detected');
+            window.location.href='http://$_SERVER[HTTP_HOST]/WebApplications/page-structures/purchase.php';
+            </script>";
 }
 exit();
 ?>

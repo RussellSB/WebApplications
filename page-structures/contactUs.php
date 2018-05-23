@@ -21,19 +21,6 @@
 </header>
 
 <main>
-    <?php
-    session_start();
-
-    if (isset($_SESSION['ERROR']))
-    {
-        if($_SESSION['ERROR'] == "TRUE"){
-            echo "<script>alert('You can not use <script>, </script>, <?php, ?>, echo or \$_)</script>";
-            $_SESSION['ERROR'] = "FALSE";
-        }
-    }else {
-        $_SESSION['ERROR'] = "FALSE";
-    }
-   ?>
 
     <div id="contact">
         <h1 class="pagetitle">Talk to us!</h1>

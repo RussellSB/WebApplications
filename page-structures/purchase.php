@@ -35,17 +35,6 @@ if (isset($_POST['purchase'])) {
 
 <main id="purchasemain">
 
-    <?php
-    if (isset($_SESSION['ERROR']))
-    {
-        if($_SESSION['ERROR'] == "TRUE"){
-            echo "<script>alert('You can not use <script>, </script>, <?php, ?>, echo or \$_)</script>";
-            $_SESSION['ERROR'] = "FALSE";
-        }
-    }else{
-        $_SESSION['ERROR'] = "FALSE";
-    }
-    ?>
 
     <div id="purchase">
         <h1 class="pagetitle">Almost there!</h1>
